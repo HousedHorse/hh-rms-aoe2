@@ -1,0 +1,62 @@
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+nomad_resources
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain DESERT
+
+create_player_lands {
+  terrain_type DESERT
+  land_percent 100
+}
+
+<ELEVATION_GENERATION>  /* hills */
+create_elevation 7 {
+  base_terrain DESERT
+  number_of_tiles 2000
+  number_of_clumps 200
+  set_scale_by_size
+  set_scale_by_groups
+}
+
+<TERRAIN_GENERATION>    /* terrain patches */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+create_object VILLAGER {
+  set_place_for_every_player
+}
+
+create_object VILLAGER {
+  number_of_objects 17
+  set_place_for_every_player
+}
+
+create_object RABID_WOLF {
+  set_gaia_object_only
+  number_of_objects 1000
+  set_scaling_to_map_size
+}
+
+create_object DLC_ANIMALSKELETON {
+  set_gaia_object_only
+  number_of_objects 50
+  set_scaling_to_map_size
+}
+
+create_object SKELETON {
+  set_gaia_object_only
+  number_of_objects 75
+  set_scaling_to_map_size
+}
+
+create_object CACTUS {
+  set_gaia_object_only
+  number_of_objects 100
+  set_scaling_to_map_size
+}
+
+create_object HAWK {
+  set_gaia_object_only
+  number_of_objects 5
+  set_scaling_to_map_size
+}

@@ -1,0 +1,180 @@
+<PLAYER_SETUP>
+random_placement
+
+<LAND_GENERATION>
+base_terrain DESERT
+
+create_player_lands {
+  terrain_type DESERT
+  land_percent 30
+  base_size 10
+  other_zone_avoidance_distance 40
+}
+
+create_land {
+  terrain_type DIRT
+  right_border 35
+  left_border 35
+  top_border 35
+  bottom_border 35
+  border_fuzziness 20
+  land_percent 40
+}
+
+create_land {
+  terrain_type PALM_DESERT
+  right_border 43
+  left_border 43
+  top_border 43
+  bottom_border 43
+  land_percent 20
+}
+
+<ELEVATION_GENERATION>
+create_elevation 3 {
+  base_terrain DESERT
+  number_of_clumps 15
+  set_scale_by_groups
+}
+
+<TERRAIN_GENERATION>
+
+<CONNECTION_GENERATION>
+
+<OBJECTS_GENERATION>
+/* player starting units/buildings */
+create_object MINING_CAMP {
+  set_place_for_every_player
+  max_distance_to_players 0
+}
+
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+
+create_object SCOUT {
+  set_place_for_every_player
+  min_distance_to_players 9
+  max_distance_to_players 9
+}
+
+create_object MARKET {
+  set_place_for_every_player
+  min_distance_to_players 15
+  max_distance_to_players 15
+}
+
+/* give each player some extra vills to compensate for only gold */
+create_object VILLAGER {
+  set_place_for_every_player
+  number_of_objects 5
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+
+/* give each player some tents */
+create_object PAVILION2 {
+  set_place_for_every_player
+  number_of_objects 3
+  min_distance_to_players 8
+  max_distance_to_players 9
+}
+create_object PAVILION3 {
+  set_place_for_every_player
+  number_of_objects 2
+  min_distance_to_players 10
+  max_distance_to_players 11
+}
+
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 4
+    max_distance_to_players 4
+  }
+
+  create_object CASTLE {
+    set_place_for_every_player
+    min_distance_to_players 10
+    max_distance_to_players 12
+  }
+
+  /* might as well give them some extra villagers */
+  create_object VILLAGER {
+    set_place_for_every_player
+    number_of_objects 5
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+endif
+
+/* per player resources */
+create_object GOLD {
+  set_place_for_every_player
+  number_of_groups 1
+  number_of_objects 8
+  set_gaia_object_only
+  min_distance_to_players 0
+  max_distance_to_players 3
+  set_tight_grouping
+}
+create_object RELIC
+{
+   group_placement_radius     	15 
+   number_of_objects 5
+   set_loose_grouping
+   set_gaia_object_only
+   set_place_for_every_player
+   min_distance_to_players    15
+   max_distance_to_players    17
+}
+
+/* map resources */
+create_object GOLD {
+  number_of_groups 20
+  number_of_objects 12
+  min_distance_to_players 25
+  set_gaia_object_only
+  set_scaling_to_map_size
+  set_tight_grouping
+}
+create_object GOLD {
+  number_of_groups 5
+  number_of_objects 20
+  min_distance_to_players 35
+  set_gaia_object_only
+  set_scaling_to_map_size
+  set_tight_grouping
+}
+
+/* eye candy */
+create_object SKELETON {
+  number_of_objects 20
+  set_gaia_object_only
+  set_scaling_to_map_size
+  terrain_to_place_on DIRT
+}
+create_object CACTUS {
+  number_of_objects 35
+  set_gaia_object_only
+  set_scaling_to_map_size
+  terrain_to_place_on DESERT
+}
+
+/* fucking wolves --err I mean lions-- bro! */
+create_object DLC_LION {
+  number_of_objects 4
+  number_of_groups 7
+  set_loose_grouping
+  set_gaia_object_only
+  set_scaling_to_map_size
+  terrain_to_place_on DIRT
+}
+
+/* bird is the word */
+create_object DLC_VULTURE {
+  number_of_objects 3
+  set_scaling_to_map_size
+}

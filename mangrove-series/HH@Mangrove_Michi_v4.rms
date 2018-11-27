@@ -1,0 +1,259 @@
+/* ******************* */
+/*                     */
+/*     WATER MICHI     */
+/*         by          */
+/*     HousedHorse     */
+/*                     */
+/* ******************* */
+
+ai_info_map_type LAND_OF_LAKES 0 1 0
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain DIRT2
+
+create_player_lands
+{
+  terrain_type DLC_MOORLAND
+  land_percent 100
+  base_size 10
+  set_zone_by_team
+  clumping_factor 15
+  other_zone_avoidance_distance 15
+}
+
+<TERRAIN_GENERATION>
+
+/* buildable shallows */
+create_terrain DLC_MANGROVESHALLOW {
+  base_terrain DLC_MOORLAND
+  land_percent 100
+  number_of_clumps 100
+  set_flat_terrain_only
+  set_avoid_player_start_areas
+}
+
+/* revert some areas back to make dockable islands */
+create_terrain DLC_MOORLAND {
+  base_terrain DLC_MANGROVESHALLOW
+  land_percent 7
+  number_of_clumps 8
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  spacing_to_other_terrain_types 2
+}
+
+/* beautify islands */
+create_terrain DLC_JUNGLEGRASS {
+  base_terrain DLC_MOORLAND
+  land_percent 1
+  number_of_clumps 500
+  set_scale_by_groups
+}
+
+/* some mangrove tree forests */
+create_terrain DLC_MANGROVEFOREST {
+  base_terrain DLC_MANGROVESHALLOW
+  land_percent 12
+  number_of_clumps 36
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  spacing_to_other_terrain_types 2
+}
+
+/* mangrove trees in the middle */
+create_terrain DLC_MANGROVEFOREST {
+  base_terrain DIRT2
+  land_percent 100
+  number_of_clumps 100
+  set_flat_terrain_only
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* normal start */
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  max_distance_to_players 0
+  min_distance_to_players 0
+}
+create_object SCOUT {
+  set_place_for_every_player
+  min_distance_to_players 4
+  max_distance_to_players 6
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 4
+  max_distance_to_players 6
+}
+
+/* if regicide... */
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 4
+    max_distance_to_players 6
+  }
+  create_object VILLAGER {
+    set_place_for_every_player
+    min_distance_to_players 4
+    max_distance_to_players 6
+    number_of_objects 7
+  }
+endif
+
+/* create komodo dragons on dockable islands */
+create_object DLC_KOMODO {
+  number_of_groups 8
+  number_of_objects 3
+  set_scaling_to_map_size
+  temp_min_distance_group_placement 10
+  set_loose_grouping
+  terrain_to_place_on DLC_MOORLAND
+  min_distance_to_players 20
+}
+
+/* per-player resources */
+create_object TURKEY {
+  set_place_for_every_player
+  set_gaia_object_only
+  number_of_objects 4
+  number_of_groups 2
+  set_loose_grouping
+  min_distance_to_players 4
+  max_distance_to_players 6
+}
+create_object BOAR {
+  set_place_for_every_player
+  set_gaia_object_only
+  number_of_objects 3
+  number_of_groups 1
+  set_loose_grouping
+  min_distance_to_players 6
+  max_distance_to_players 8
+}
+create_object DLC_RAINTREE {
+  set_place_for_every_player
+  set_gaia_object_only
+  number_of_objects 3
+  min_distance_group_placement 2
+  min_distance_to_players 5
+  max_distance_to_players 5
+}
+create_object GOLD {
+  number_of_objects          5
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    6
+  max_distance_to_players    8
+  min_distance_group_placement  5
+}
+create_object STONE {
+  number_of_objects          5
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    6
+  max_distance_to_players    8
+  min_distance_group_placement  5
+}
+create_object MARLIN1 {
+  number_of_objects 2
+  number_of_groups 1
+  group_placement_radius 4
+  set_tight_grouping
+	set_gaia_object_only
+	set_place_for_every_player
+	min_distance_to_players			10
+	max_distance_to_players			14
+	min_distance_group_placement	9
+  terrain_to_place_on DLC_MANGROVESHALLOW
+  max_distance_to_other_zones 2
+}
+
+create_object DLC_WATERBUFFALO
+{
+  number_of_groups 250
+  number_of_objects 1
+  group_placement_radius 2
+  set_gaia_object_only
+  min_distance_to_players 30
+  temp_min_distance_group_placement 22
+  max_distance_to_other_zones 0
+}
+
+create_object GOLD
+{
+  number_of_groups		10
+  number_of_objects		4
+  group_variance			1
+	group_placement_radius			2
+	set_tight_grouping
+	set_gaia_object_only
+	min_distance_to_players			25
+	min_distance_group_placement	5
+  terrain_to_place_on DLC_MANGROVESHALLOW
+  set_scaling_to_map_size
+  max_distance_to_other_zones 4
+}
+
+/* EXTRA STONE */
+create_object STONE
+{
+  number_of_groups		10
+	number_of_objects			4
+	group_variance				1
+	group_placement_radius			2
+	set_tight_grouping
+	set_gaia_object_only
+	min_distance_to_players			25
+	min_distance_group_placement	5
+  terrain_to_place_on DLC_MANGROVESHALLOW
+  set_scaling_to_map_size
+  max_distance_to_other_zones 4
+}
+
+/* relics and goodies */
+create_object RELIC {
+  number_of_objects	1
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players 20
+  max_distance_to_players 26
+  temp_min_distance_group_placement 20
+  max_distance_to_other_zones 4
+}
+/* extra relics */
+create_object RELIC {
+  number_of_objects	1
+  number_of_groups	3
+  set_scaling_to_map_size
+  set_gaia_object_only
+  min_distance_to_players 30
+  temp_min_distance_group_placement 20
+  max_distance_to_other_zones 4
+}
+
+create_object MARLIN1 {
+  number_of_objects 170
+	set_gaia_object_only
+	min_distance_to_players			20
+	temp_min_distance_group_placement	6
+  terrain_to_place_on DLC_MANGROVESHALLOW
+  max_distance_to_other_zones 4
+}
+
+create_object DLC_STORK {
+  number_of_objects 6
+  set_scaling_to_map_size
+}

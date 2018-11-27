@@ -1,0 +1,355 @@
+/* ******************* */
+/*                     */
+/*     SPANISHIWA      */
+/*         by          */
+/*     HousedHorse     */
+/*                     */
+/* ******************* */
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+#const SEAGULLS 303
+#const BUSH     302
+
+<LAND_GENERATION>       /* main lands and seas */
+
+/* choose a type for base terrain */
+base_terrain LEAVES
+
+create_player_lands {
+  terrain_type DLC_MOORLAND
+  land_percent 100
+  base_size 18
+  border_fuzziness 20
+  clumping_factor 20
+  left_border   10
+  right_border  10
+  top_border    10
+  bottom_border 10
+  zone 1
+  other_zone_avoidance_distance 16
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+create_elevation 3 {
+  base_terrain DLC_MOORLAND
+  set_scale_by_groups
+  set_scale_by_size
+  spacing 3
+  number_of_clumps 10
+  number_of_tiles 500
+}
+
+<TERRAIN_GENERATION>    /* terrain patches */
+
+create_terrain DLC_RAINFOREST {
+  base_terrain DLC_MOORLAND
+  land_percent 9
+  number_of_clumps 30
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  spacing_to_other_terrain_types 5
+}
+
+create_terrain DLC_MANGROVEFOREST {
+  base_terrain DLC_MOORLAND
+  land_percent 3
+  number_of_clumps 10
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  set_flat_terrain_only
+  spacing_to_other_terrain_types 2
+}
+
+create_terrain DLC_JUNGLELEAVES {
+  base_terrain DLC_MOORLAND
+  land_percent 13
+  number_of_clumps 700
+  set_scale_by_groups
+  spacing_to_other_terrain_types 2
+}
+
+create_terrain DLC_JUNGLEGRASS {
+  base_terrain DLC_MOORLAND
+  land_percent 2
+  number_of_clumps 200
+  set_scale_by_groups
+}
+
+create_terrain DLC_WATER5 {
+  base_terrain                   LEAVES
+  spacing_to_other_terrain_types 2
+  land_percent                   100
+  number_of_clumps               100
+  set_avoid_player_start_areas     
+  set_scale_by_groups
+  set_flat_terrain_only
+  spacing_to_other_terrain_types 2
+}
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* player objects */
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  max_distance_to_players 0
+  min_distance_to_players 0
+}
+create_object SCOUT {
+  set_place_for_every_player
+  min_distance_to_players 4
+  max_distance_to_players 6
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 4
+  max_distance_to_players 6
+}
+
+/* if regicide... */
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 4
+    max_distance_to_players 6
+  }
+  create_object CASTLE {
+    set_place_for_every_player
+    min_distance_to_players 10
+    max_distance_to_players 10
+  }
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 4
+  max_distance_to_players 6
+  number_of_objects 7
+}
+endif
+
+/* rocks to prevent access to outside water */
+create_object ROCK {
+  number_of_objects  9999
+  set_gaia_object_only
+  terrain_to_place_on     LEAVES
+}
+
+/* starting resources */
+create_object TURKEY {
+  set_place_for_every_player
+  number_of_objects 4
+  number_of_groups 2
+  set_loose_grouping
+  min_distance_to_players 4
+  max_distance_to_players 6
+  set_gaia_object_only
+}
+create_object GOLD {
+  number_of_objects          7
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    10
+  max_distance_to_players    15
+  min_distance_group_placement  3
+  max_distance_to_other_zones 4
+}
+
+create_object GOLD {
+  number_of_objects          3
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    12
+  max_distance_to_players    17
+  min_distance_group_placement  3
+  max_distance_to_other_zones 4
+}
+
+create_object GOLD {
+	number_of_objects				4
+	group_placement_radius			3
+	set_tight_grouping
+	set_gaia_object_only
+	set_place_for_every_player
+	min_distance_to_players			25
+	max_distance_to_players			35
+	min_distance_group_placement	3
+  max_distance_to_other_zones 4
+}
+
+create_object STONE {
+  number_of_objects          5
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    10
+  max_distance_to_players    15
+  min_distance_group_placement  3
+  max_distance_to_other_zones 4
+}
+
+create_object STONE {
+  number_of_objects          3
+  group_placement_radius     3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players    12
+  max_distance_to_players    17
+  min_distance_group_placement  3
+  max_distance_to_other_zones 4
+}
+
+create_object STONE {
+	number_of_objects				4
+	group_placement_radius			3
+	set_tight_grouping
+	set_gaia_object_only
+	set_place_for_every_player
+	min_distance_to_players			25
+	max_distance_to_players			35
+	min_distance_group_placement	3
+  max_distance_to_other_zones 4
+}
+
+create_object DLC_ORANGEBUSH {
+  number_of_objects 6
+  group_placement_radius 3
+  set_tight_grouping
+  set_gaia_object_only
+  set_place_for_every_player
+  min_distance_to_players 10
+  max_distance_to_players 12
+	min_distance_group_placement	6
+}
+
+create_object BOAR
+{
+	number_of_objects				3
+  number_of_groups 1
+	set_gaia_object_only
+	set_place_for_every_player
+	min_distance_to_players			10
+	max_distance_to_players			12
+}
+
+create_object BOAR
+{
+	number_of_objects				3
+  number_of_groups 1
+	set_gaia_object_only
+	set_place_for_every_player
+	min_distance_to_players			12
+	max_distance_to_players			14
+}
+
+/* distant resources */
+
+create_object BUSH {
+  number_of_groups 3
+  number_of_objects 3
+  set_loose_grouping
+  temp_min_distance_group_placement 2
+  set_gaia_object_only
+  min_distance_to_players	30
+  set_scaling_to_map_size
+  max_distance_to_other_zones 4
+}
+create_object BUSH {
+  number_of_groups 4
+  number_of_objects 2
+  set_loose_grouping
+  temp_min_distance_group_placement 2
+  set_gaia_object_only
+  min_distance_to_players	20
+  set_scaling_to_map_size
+  max_distance_to_other_zones 4
+}
+
+/* EXTRA GOLD */
+create_object GOLD {
+  number_of_groups		2
+  number_of_objects		4
+  group_variance			1
+	group_placement_radius			3
+	set_tight_grouping
+	set_gaia_object_only
+	min_distance_to_players			30
+	min_distance_group_placement	5
+  temp_min_distance_group_placement 15
+  max_distance_to_other_zones 10
+  set_scaling_to_map_size
+}
+/* EXTRA STONE */
+create_object STONE {
+  number_of_groups		2
+  number_of_objects		4
+  group_variance			1
+	group_placement_radius			3
+	set_tight_grouping
+	set_gaia_object_only
+	min_distance_to_players			30
+	min_distance_group_placement	5
+  temp_min_distance_group_placement 15
+  max_distance_to_other_zones 10
+  set_scaling_to_map_size
+}
+
+/* mother nature and wolves */
+create_object MACAW {
+  number_of_objects 6
+  set_scaling_to_map_size
+}
+create_object SEAGULLS {
+  terrain_to_place_on DLC_WATER5
+  number_of_groups 15
+  number_of_objects 1
+  temp_min_distance_group_placement  7
+  set_gaia_object_only
+  set_scaling_to_map_size
+}
+
+create_object DLC_KOMODO {
+  set_scaling_to_map_size
+  number_of_groups 3
+  set_loose_grouping
+  number_of_objects 1
+  set_gaia_object_only
+  temp_min_distance_group_placement 20
+  min_distance_to_players 32
+  max_distance_to_other_zones 10
+}
+create_object DLC_TIGER {
+  set_scaling_to_map_size
+  number_of_groups 3
+  set_loose_grouping
+  number_of_objects 1
+  set_gaia_object_only
+  temp_min_distance_group_placement 20
+  min_distance_to_players 32
+  max_distance_to_other_zones 10
+}
+
+/* relics and goodies */
+create_object RELIC {
+  number_of_objects	5
+  min_distance_to_players 25
+  temp_min_distance_group_placement 20
+  terrain_to_place_on     DLC_MOORLAND
+}
+create_object DLC_RAINTREE {
+  set_place_for_every_player
+  set_gaia_object_only
+  number_of_objects 3
+  min_distance_group_placement 2
+  min_distance_to_players 5
+  max_distance_to_players 5
+}
+

@@ -1,0 +1,102 @@
+
+/* **************************************** */
+/* Map:     Mangrove Nothing                */
+/* Version: 1.0                             */
+/* Author:  HousedHorse                     */
+/* Date:    11/25/2018                      */
+/* **************************************** */
+
+/* some const definitions */
+#const DLC_FALCON   1056
+#const DEADTREE     404
+#const DEADTREE2    407
+#const GRASS_CLIFFS 16
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain DLC_MANGROVEFOREST
+
+create_player_lands {
+  terrain_type ROAD
+  land_percent 5
+  base_size 10
+  left_border   -1
+  right_border  -1
+  top_border    -1
+  bottom_border -1
+}
+
+create_land {
+  terrain_type DLC_MOORLAND
+  left_border   40
+  right_border  40
+  top_border    40
+  bottom_border 40
+  land_percent 5
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+<TERRAIN_GENERATION>    /* terrain patches */
+
+create_terrain DLC_MANGROVESHALLOW {
+  base_terrain DLC_MANGROVEFOREST
+  land_percent 6
+  number_of_clumps 8
+  set_scale_by_groups
+  set_avoid_player_start_areas
+}
+
+create_terrain DLC_BEACH2 {
+  land_percent 100
+  number_of_clumps 999999
+  base_terrain DLC_MANGROVESHALLOW
+}
+
+create_terrain DLC_MANGROVESHALLOW {
+  land_percent 100
+  number_of_clumps 999999
+  base_terrain ROAD
+}
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* ---Begin standard resources--- */
+
+/* standard start */
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+
+create_object GOLD {
+  number_of_objects 9999999
+  terrain_to_place_on DLC_MOORLAND
+}
+
+/* regicide support */
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+endif
+
+/* birds */
+/* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
+create_object MACAW {
+  number_of_objects 6
+  set_scaling_to_map_size
+}

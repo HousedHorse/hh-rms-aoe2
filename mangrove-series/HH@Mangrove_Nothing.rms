@@ -53,6 +53,7 @@ create_terrain DLC_BEACH2 {
   land_percent 100
   number_of_clumps 999999
   base_terrain DLC_MANGROVESHALLOW
+  spacing_to_other_terrain_types 1
 }
 
 create_terrain DLC_MANGROVESHALLOW {

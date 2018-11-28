@@ -65,14 +65,6 @@ create_connect_all_players_land {
   terrain_cost DLC_RAINFOREST 1000
   terrain_cost DLC_JUNGLEGRASS 1
 }
-create_connect_teams_lands {
-  replace_terrain DLC_JUNGLEGRASS ROAD_GRASSY
-  replace_terrain DLC_RAINFOREST ROAD_GRASSY
-  replace_terrain ROAD_GRASSY ROAD_GRASSY
-  terrain_cost DLC_RAINFOREST 100
-  terrain_cost DLC_JUNGLEGRASS 50
-  terrain_cost ROAD_GRASSY 1
-}
 
 <OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
 

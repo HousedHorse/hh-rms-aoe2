@@ -33,10 +33,10 @@ create_player_lands {
   terrain_type DLC_MOORLAND
   land_percent 20
   base_size 12
-  left_border   3
-  right_border  3
-  top_border    3
-  bottom_border 3
+  left_border   5
+  right_border  5
+  top_border    5
+  bottom_border 5
   border_fuzziness 1
   other_zone_avoidance_distance 30
 }
@@ -310,7 +310,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -323,7 +323,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -337,7 +337,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -351,7 +351,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -365,7 +365,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -379,7 +379,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -393,7 +393,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   temp_min_distance_group_placement  44
 }
 endif
@@ -409,7 +409,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -423,7 +423,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -437,7 +437,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -451,7 +451,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -465,7 +465,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -479,7 +479,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   min_distance_group_placement  5
 }
 endif
@@ -493,7 +493,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   temp_min_distance_group_placement  44
 }
 endif

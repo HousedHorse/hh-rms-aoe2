@@ -33,10 +33,10 @@ create_player_lands {
   terrain_type DLC_MOORLAND
   land_percent 20
   base_size 12
-  left_border   5
-  right_border  5
-  top_border    5
-  bottom_border 5
+  left_border   4
+  right_border  4
+  top_border    4
+  bottom_border 4
   border_fuzziness 1
   other_zone_avoidance_distance 30
 }
@@ -65,8 +65,8 @@ create_terrain DLC_MANGROVEFOREST
 <CONNECTION_GENERATION>
 create_connect_all_players_land
 {
-  replace_terrain DLC_MANGROVEFOREST       DLC_MANGROVESHALLOW
-  terrain_cost    DLC_MANGROVEFOREST        7
+  replace_terrain DLC_RAINFOREST       DLC_MANGROVESHALLOW
+  terrain_cost    DLC_RAINFOREST        7
   terrain_cost    DLC_MANGROVESHALLOW         2
   terrain_cost    DLC_MOORLAND         2
   terrain_cost    BEACH2        7

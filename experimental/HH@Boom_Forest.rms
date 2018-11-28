@@ -21,7 +21,7 @@ base_terrain DLC_RAINFOREST
 
 create_player_lands {
   terrain_type DLC_JUNGLEGRASS
-  land_percent 11
+  land_percent 6
   base_size     11
   left_border   0
   right_border  0
@@ -32,7 +32,7 @@ create_player_lands {
 }
 create_player_lands {
   terrain_type DLC_JUNGLEGRASS
-  land_percent 11
+  land_percent 6
   base_size     11
   left_border   0
   right_border  0
@@ -43,7 +43,7 @@ create_player_lands {
 }
 create_player_lands {
   terrain_type DLC_JUNGLEGRASS
-  land_percent 11
+  land_percent 6
   base_size     11
   left_border   0
   right_border  0

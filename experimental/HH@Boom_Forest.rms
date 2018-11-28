@@ -62,15 +62,15 @@ create_connect_all_players_land {
   replace_terrain DLC_JUNGLEGRASS DLC_JUNGLEGRASS
   replace_terrain DLC_RAINFOREST DLC_JUNGLEGRASS
   replace_terrain DLC_BEACH2 DLC_JUNGLEGRASS
-  terrain_cost DLC_RAINFOREST 7
+  terrain_cost DLC_RAINFOREST 1000
   terrain_cost DLC_JUNGLEGRASS 1
 }
 create_connect_teams_lands {
   replace_terrain DLC_JUNGLEGRASS ROAD_GRASSY
   replace_terrain DLC_RAINFOREST ROAD_GRASSY
   replace_terrain ROAD_GRASSY ROAD_GRASSY
-  terrain_cost DLC_RAINFOREST 7
-  terrain_cost DLC_JUNGLEGRASS 2
+  terrain_cost DLC_RAINFOREST 100
+  terrain_cost DLC_JUNGLEGRASS 50
   terrain_cost ROAD_GRASSY 1
 }
 

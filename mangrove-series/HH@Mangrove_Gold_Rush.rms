@@ -141,7 +141,7 @@ create_object FORAGE {
 
 /* near gold */
 create_object GOLD {
-  number_of_objects 7
+  number_of_objects 4
   group_placement_radius 3
   set_tight_grouping
   set_gaia_object_only

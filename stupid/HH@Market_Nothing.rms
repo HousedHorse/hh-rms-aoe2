@@ -27,13 +27,12 @@ create_player_lands {
   top_border    10
   bottom_border 10
   border_fuzziness 20
-  clumping_factor 20
 }
 
 <ELEVATION_GENERATION>  /* hills */
 if TINY_MAP
   create_elevation 4 {
-    base_terrain GRASS /* change this to match base_terrain of map */
+    base_terrain DLC_JUNGLEGRASS /* change this to match base_terrain of map */
     number_of_clumps 10
     number_of_tiles 2000
     set_scale_by_groups
@@ -41,7 +40,7 @@ if TINY_MAP
   }
 else
   create_elevation 7 {
-    base_terrain GRASS /* change this to match base_terrain of map */
+    base_terrain DLC_JUNGLEGRASS /* change this to match base_terrain of map */
     number_of_clumps 15
     number_of_tiles 3000
     set_scale_by_groups
@@ -51,7 +50,7 @@ endif
 
 <TERRAIN_GENERATION>    /* terrain patches */
 create_terrain WATER {
-  base_terrain GRASS /* change to base terrain of the map */
+  base_terrain DLC_JUNGLEGRASS /* change to base terrain of the map */
   land_percent 16
   number_of_clumps 8
   set_scale_by_groups

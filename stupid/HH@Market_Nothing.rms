@@ -11,7 +11,6 @@
 #const DEADTREE     404
 #const DEADTREE2    407
 #const GRASS_CLIFFS 16
-#conts POP_LIMIT    871
 
 <PLAYER_SETUP>          /* basic setup */
 random_placement
@@ -62,11 +61,6 @@ create_object MARKET {
   max_distance_to_players 0
 }
 create_object VILLAGER {
-  set_place_for_every_player
-  min_distance_to_players 6
-  max_distance_to_players 6
-}
-create_object POP_LIMIT {
   set_place_for_every_player
   min_distance_to_players 6
   max_distance_to_players 6

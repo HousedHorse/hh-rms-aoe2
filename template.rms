@@ -30,6 +30,7 @@ create_player_lands {
 }
 
 <ELEVATION_GENERATION>  /* hills */
+/* arabia elevation settings */
 if TINY_MAP
   create_elevation 4 {
     base_terrain GRASS /* change this to match base_terrain of map */
@@ -48,6 +49,7 @@ else
   }
 endif
 
+/* remove to spawn no cliffs */
 <CLIFF_GENERATION>      /* cliffs */
 
 <TERRAIN_GENERATION>    /* terrain patches */
@@ -57,6 +59,19 @@ create_terrain GRASS {
   land_percent 100
   number_of_clumps 99999
   spacing_to_other_terrain_types 0
+}
+/* arabia forest settings */
+/* FOREST / BAMBOO / JUNGLE
+   PINE_FORST / PALM_DESERT
+   SNOW_FOREST / DLC_DRAGONFOREST
+   DLC_BAOBAFOREST / DLC_ACACIAFOREST
+   DLC_MANGROVEFOREST */
+create_terrain FOREST {
+  base_terrain GRASS /* change to base terrain of the map */
+  land_percent 16
+  number_of_clumps 8
+  set_scale_by_groups
+  set_avoid_player_start_areas
 }
 
 <CONNECTION_GENERATION> /* bridges/roads */

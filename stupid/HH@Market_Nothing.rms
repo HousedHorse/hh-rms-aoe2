@@ -37,18 +37,10 @@ create_player_lands {
 <CONNECTION_GENERATION> /* bridges/roads */
 
 create_connect_all_players_land {
-  replace_terrain DESERT FOREST
+  replace_terrain DESERT SNOW
   terrain_cost DESERT 7
-  terrain_cost GRASS2 1
+  terrain_cost SNOW 1
   terrain_size DESERT 5 0
-}
-
-create_connect_teams_lands {
-  replace_terrain DESERT GRASS2
-  replace_terrain FOREST GRASS2
-  terrain_cost DESERT 7
-  terrain_cost FOREST 7
-  terrain_cost GRASS2 1
 }
 
 <OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
@@ -82,11 +74,6 @@ create_object TRADE_CART {
   max_distance_to_players 6
 }
 
-create_object OLD_STONE_HEAD {
-  terrain_to_place_on DESERT
-  number_of_objects 999999
-}
-
 /* regicide support */
 if REGICIDE
   create_object KING {
@@ -95,6 +82,11 @@ if REGICIDE
     max_distance_to_players 6
   }
 endif
+
+create_object ROCK {
+  terrain_to_place_on DESERT
+  number_of_objects 999999
+}
 
 /* birds */
 /* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */

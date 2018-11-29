@@ -1,0 +1,104 @@
+
+/* **************************************** */
+/* Map:     '                               */
+/* Version: '                               */
+/* Author:  HousedHorse                     */
+/* Date:    '                               */
+/* **************************************** */
+
+/* some const definitions */
+#const DLC_FALCON   1056
+#const DEADTREE     404
+#const DEADTREE2    407
+#const GRASS_CLIFFS 16
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain DESERT
+
+create_player_lands {
+  terrain_type GRASS
+  land_percent 10
+  base_size 10
+  left_border   0
+  right_border  0
+  top_border    0
+  bottom_border 0
+  border_fuzziness 20
+  clumping_factor 20
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+<TERRAIN_GENERATION>    /* terrain patches */
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+create_connect_all_players_land {
+  replace_terrain DESERT FOREST
+  terrain_cost DESERT 7
+  terrain_cost GRASS2 1
+  terrain_size DESERT 5 0
+}
+
+create_connect_teams_lands {
+  replace_terrain DESERT GRASS2
+  replace_terrain FOREST GRASS2
+  terrain_cost DESERT 7
+  terrain_cost FOREST 7
+  terrain_cost GRASS2 1
+}
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* ---Begin standard resources--- */
+
+/* standard start */
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object MARKET {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+create_object TRADE_CART {
+  set_place_for_every_player
+  number_of_objects 3
+  number_of_groups 1
+  group_placement_radius 6
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+
+create_object OLD_STONE_HEAD {
+  terrain_to_place_on DESERT
+  number_of_objects 999999
+}
+
+/* regicide support */
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+endif
+
+/* birds */
+/* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
+create_object MACAW {
+  number_of_objects 6
+  set_scaling_to_map_size
+}

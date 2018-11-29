@@ -1,0 +1,139 @@
+
+/* **************************************** */
+/* Map:     '                               */
+/* Version: '                               */
+/* Author:  HousedHorse                     */
+/* Date:    '                               */
+/* **************************************** */
+
+/* some const definitions */
+#const DLC_FALCON   1056
+#const DEADTREE     404
+#const DEADTREE2    407
+#const GRASS_CLIFFS 16
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain DLC_WATER5
+
+create_player_lands {
+  terrain_type DIRT2
+  land_percent 2
+  base_size 10
+  left_border   -3
+  right_border  -3
+  top_border    -3
+  bottom_border -3
+  other_zone_avoidance_distance 5
+}
+
+create_land {
+  terrain_type DLC_JUNGLEGRASS
+  land_percent 50
+  base_size 20
+  left_border   25
+  right_border  25
+  top_border    25
+  bottom_border 25
+  border_fuzziness 20
+  clumping_factor 20
+  other_zone_avoidance_distance 5
+  zone 8
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+<TERRAIN_GENERATION>    /* terrain patches */
+/* replace cliff grass with desired terrain */
+create_terrain GRASS {
+  base_terrain GRASS_CLIFFS
+  land_percent 100
+  number_of_clumps 99999
+  spacing_to_other_terrain_types 0
+}
+
+create_terrain DLC_RAINFOREST {
+  spacing_to_other_terrain_types 3
+  base_terrain DLC_JUNGLEGRASS
+  land_percent 100
+  number_of_clumps 99999
+}
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* ---Begin standard resources--- */
+
+/* standard start */
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+create_object TRANSPORT_SHIP {
+  set_place_for_every_player
+  min_distance_to_players 7
+  max_distance_to_players 12
+}
+
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+endif
+
+/* birds */
+/* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
+create_object MACAW {
+  number_of_objects 6
+  set_scaling_to_map_size
+}
+
+/* fishies */
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 25
+  number_of_objects 999999
+}
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 15
+  number_of_objects 999999
+}
+
+create_object FISH {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 2
+  number_of_objects 99999
+  min_distance_group_placement 4
+}
+
+create_object SNAPPER {
+  temp_min_distance_group_placement 6
+  max_distance_to_other_zones 4
+  number_of_objects 99999
+  min_distance_group_placement 6
+}
+
+create_object MARLIN1 {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 5
+  number_of_objects 99999
+  min_distance_group_placement 6
+}
+
+create_object MARLIN2 {
+  temp_min_distance_group_placement 8
+  max_distance_to_other_zones 7
+  number_of_objects 99999
+  min_distance_group_placement 6
+}

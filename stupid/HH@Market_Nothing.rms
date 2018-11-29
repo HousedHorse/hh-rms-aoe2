@@ -37,9 +37,9 @@ create_player_lands {
 <CONNECTION_GENERATION> /* bridges/roads */
 
 create_connect_all_players_land {
-  replace_terrain DESERT SNOW
+  replace_terrain DESERT GRASS
   terrain_cost DESERT 7
-  terrain_cost SNOW 1
+  terrain_cost GRASS 4
   terrain_size DESERT 5 0
 }
 

@@ -57,6 +57,7 @@ create_terrain WATER {
   set_avoid_player_start_areas
   set_flat_terrain_only
   height_limits 0 0
+  spacing_to_other_terrain_types 3
 }
 
 <CONNECTION_GENERATION> /* bridges/roads */

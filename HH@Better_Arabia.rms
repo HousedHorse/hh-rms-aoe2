@@ -76,18 +76,6 @@ create_terrain PALM_DESERT {
   set_scale_by_groups
   set_avoid_player_start_areas
 }
-create_terrain DIRT {
-  base_terrain DESERT /* change to base terrain of the map */
-  land_percent 6
-  number_of_clumps 12
-  set_scale_by_groups
-}
-create_terrain DIRT2 {
-  base_terrain DESERT /* change to base terrain of the map */
-  land_percent 6
-  number_of_clumps 12
-  set_scale_by_groups
-}
 
 <CONNECTION_GENERATION> /* bridges/roads */
 
@@ -162,7 +150,7 @@ endif
 
 /* berries */
 /* FORAGE / DLC_ORANGEBUSH */
-create_object FORAGE {
+create_object DLC_ORANGEBUSH {
   number_of_objects 6
   group_placement_radius 3
   set_tight_grouping
@@ -270,7 +258,7 @@ create_object DEER {
 /* boars */
 /* BOAR / JAVELINA / DLC_ELEPHANT
    DLC_RHINO */
-create_object BOAR {
+create_object DLC_ELEPHANT {
   number_of_objects 1
   number_of_groups 2
   set_loose_grouping

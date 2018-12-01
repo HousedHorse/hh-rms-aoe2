@@ -22,9 +22,9 @@ create_player_lands {
   terrain_type DLC_CRACKED
   land_percent 50
   if LUDIKRIS_MAP
-    base_size 24
+    base_size 30
   else
-    base_size 40
+    base_size 20
   endif
   left_border   0
   right_border  0
@@ -107,15 +107,15 @@ if LUDIKRIS_MAP
 create_object WALL
 {
   set_place_for_every_player
-  min_distance_to_players       35
-  max_distance_to_players       35
+  min_distance_to_players       25
+  max_distance_to_players       25
 }
 else
 create_object WALL
 {
   set_place_for_every_player
-  min_distance_to_players       20
-  max_distance_to_players       20
+  min_distance_to_players       15
+  max_distance_to_players       15
 }
 endif
 

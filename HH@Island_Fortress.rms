@@ -16,80 +16,73 @@
 random_placement
 
 <LAND_GENERATION>       /* main lands and seas */
-base_terrain DESERT
+base_terrain DLC_WATER5
 
 create_player_lands {
-  terrain_type DESERT
-  land_percent 100
-  base_size 10
+  terrain_type DLC_CRACKED
+  land_percent 50
+  if LUDIKRIS_MAP
+  create_object WALL
+  {
+    base_size 24
+  }
+  else
+  create_object WALL
+  {
+    base_size 40
+  }
+  endif
   left_border   0
   right_border  0
   top_border    0
   bottom_border 0
+  border_fuzziness 20
+  clumping_factor 20
+  other_zone_avoidance_distance 5
 }
 
 <ELEVATION_GENERATION>  /* hills */
 /* arabia elevation settings */
 if TINY_MAP
   create_elevation 4 {
-    base_terrain DESERT /* change this to match base_terrain of map */
-    number_of_clumps 10
-    number_of_tiles 2000
+    base_terrain DLC_CRACKED /* change this to match base_terrain of map */
+    number_of_clumps 7
+    number_of_tiles 1500
     set_scale_by_groups
     set_scale_by_size
   }
 else
   create_elevation 7 {
-    base_terrain DESERT /* change this to match base_terrain of map */
-    number_of_clumps 15
-    number_of_tiles 3000
+    base_terrain DLC_CRACKED /* change this to match base_terrain of map */
+    number_of_clumps 10
+    number_of_tiles 2500
     set_scale_by_groups
     set_scale_by_size
   }
 endif
 
-/* remove to spawn no cliffs */
-<CLIFF_GENERATION>      /* cliffs */
-min_number_of_cliffs 10
-max_number_of_cliffs 15
-min_length_of_cliff  3
-max_length_of_cliff 10
-
 <TERRAIN_GENERATION>    /* terrain patches */
-/* replace cliff grass with desired terrain */
-create_terrain DESERT {
-  base_terrain GRASS_CLIFFS
-  land_percent 100
-  number_of_clumps 99999
-  spacing_to_other_terrain_types 0
-}
 /* arabia forest settings */
 /* FOREST / BAMBOO / JUNGLE
    PINE_FORST / PALM_DESERT
    SNOW_FOREST / DLC_DRAGONFOREST
    DLC_BAOBAFOREST / DLC_ACACIAFOREST
    DLC_MANGROVEFOREST */
-create_terrain PALM_DESERT {
-  base_terrain DESERT /* change to base terrain of the map */
-  land_percent 16
-  number_of_clumps 8
-  set_scale_by_groups
+create_terrain LEAVES {
+  base_terrain DLC_CRACKED
+  land_percent 13
+  number_of_clumps 12
+  spacing_to_other_terrain_types 5
   set_avoid_player_start_areas
+  set_scale_by_groups
 }
 
-create_terrain DLC_SAVANNAH {
-  base_terrain DESERT
-  land_percent 10
-  number_of_clumps 10
-  set_scale_by_groups
-  set_avoid_player_start_areas
-}
-
-create_terrain WATER {
-  base_terrain DLC_SAVANNAH
-  spacing_to_other_terrain_types 3
-  land_percent 100
-  number_of_clumps 99999
+create_terrain DLC_CRACKED {
+land_percent 20
+spacing_to_other_terrain_types 5
+number_of_clumps 15
+set_scale_by_groups
+land_id 111
 }
 
 <CONNECTION_GENERATION> /* bridges/roads */
@@ -115,6 +108,22 @@ create_object SCOUT {
   min_distance_to_players 7
   max_distance_to_players 9
 }
+
+if LUDIKRIS_MAP
+create_object WALL
+{
+  set_place_for_every_player
+  min_distance_to_players       35
+  max_distance_to_players       35
+}
+else
+create_object WALL
+{
+  set_place_for_every_player
+  min_distance_to_players       20
+  max_distance_to_players       20
+}
+endif
 
 /* 3 relics per map, 1 relic per player. ludikris map gets ludikris relics */
 if LUDIKRIS_MAP
@@ -143,24 +152,15 @@ else
   }
 endif
 
-create_object DLC_ELEPHANT {
-  number_of_objects 3
-  group_variance 1
-  group_placement_radius 6
-  number_of_groups 10
-  temp_min_distance_group_placement 20
-  terrain_to_place_on DLC_SAVANNAH
-  set_scaling_to_map_size
-  min_distance_to_players     40
+/* create "dead forests" */
+create_object DEADTREE2 {
+  terrain_to_place_on LEAVES
+  number_of_objects 999999
+  temp_min_distance_group_placement 1
 }
-
-create_object PALMTREE {
-  number_of_objects 20
-  group_placement_radius 30
-  number_of_groups 10
-  temp_min_distance_group_placement 20
-  terrain_to_place_on DLC_SAVANNAH
-  set_scaling_to_map_size
+create_object DEADTREE {
+  terrain_to_place_on LEAVES
+  number_of_objects 999999
 }
 
 /* regicide support */
@@ -185,7 +185,7 @@ endif
 
 /* berries */
 /* FORAGE / DLC_ORANGEBUSH */
-create_object DLC_ORANGEBUSH {
+create_object FORAGE {
   number_of_objects 6
   group_placement_radius 3
   set_tight_grouping
@@ -265,7 +265,7 @@ create_object STONE {
 /* SHEEP / TURKEY / DLC_GOAT
    DLC_LLAMA / DLC_WATERBUFFALO
    DLC_COW */
-create_object DLC_GOAT {
+create_object DLC_COW {
   number_of_objects 4
   number_of_groups 2
   temp_min_distance_group_placement 2
@@ -293,7 +293,7 @@ create_object DLC_ZEBRA {
 /* boars */
 /* BOAR / JAVELINA / DLC_ELEPHANT
    DLC_RHINO */
-create_object DLC_ELEPHANT {
+create_object DLC_RHINO {
   number_of_objects 1
   number_of_groups 2
   set_loose_grouping
@@ -330,7 +330,7 @@ create_object DEADTREE2 {
 /* predatory lifeforms */
 /* WOLF / JAGUAR / DLC_KOMODO / DLC_TIGER 
    DLC_LION / DLC_CROCODILE / DLC_BEAR */
-create_object DLC_LION {
+create_object WOLF {
   number_of_objects 2
   set_gaia_object_only
   set_place_for_every_player
@@ -349,8 +349,9 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
   min_distance_group_placement  5
+  place_on_specific_land_id 111
+
 }
 endif
 
@@ -362,7 +363,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -376,7 +377,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -390,7 +391,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -404,7 +405,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -418,7 +419,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -432,7 +433,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   temp_min_distance_group_placement  44
 }
 endif
@@ -448,7 +449,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -462,7 +463,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -476,7 +477,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -490,7 +491,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -504,7 +505,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -518,7 +519,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   min_distance_group_placement  5
 }
 endif
@@ -532,14 +533,52 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  place_on_specific_land_id 111
   temp_min_distance_group_placement  44
 }
 endif
 
 /* birds */
 /* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
-create_object DLC_VULTURE {
+create_object DLC_STORK {
   number_of_objects 6
   set_scaling_to_map_size
+}
+
+/* fishies */
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 25
+  number_of_objects 999999
+}
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 15
+  number_of_objects 999999
+}
+
+create_object FISH {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 2
+  number_of_objects 99999
+  min_distance_group_placement 4
+}
+
+create_object SNAPPER {
+  temp_min_distance_group_placement 6
+  max_distance_to_other_zones 4
+  number_of_objects 99999
+  min_distance_group_placement 6
+}
+
+create_object MARLIN1 {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 5
+  number_of_objects 99999
+  min_distance_group_placement 6
+}
+
+create_object MARLIN2 {
+  temp_min_distance_group_placement 8
+  max_distance_to_other_zones 7
+  number_of_objects 99999
+  min_distance_group_placement 6
 }

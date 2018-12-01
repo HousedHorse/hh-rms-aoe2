@@ -77,6 +77,21 @@ create_terrain PALM_DESERT {
   set_avoid_player_start_areas
 }
 
+create_terrain DLC_SAVANNAH {
+  base_terrain DESERT
+  land_percent 10
+  number_of_clumps 10
+  set_scale_by_groups
+  set_avoid_player_start_areas
+}
+
+create_terrain WATER {
+  base_terrain DLC_SAVANNAH
+  spacing_to_other_terrain_types 3
+  land_percent 100
+  number_of_clumps 99999
+}
+
 <CONNECTION_GENERATION> /* bridges/roads */
 
 <OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
@@ -127,6 +142,25 @@ else
     max_distance_to_other_zones 4
   }
 endif
+
+create_object DLC_ELEPHANT {
+  number_of_objects 3
+  group_variance 1
+  group_placement_radius 6
+  number_of_groups 10
+  temp_min_distance_group_placement 20
+  terrain_to_place_on DLC_SAVANNAH
+  set_scaling_to_map_size
+}
+
+create_object PALMTREE {
+  number_of_objects 20
+  group_placement_radius 30
+  number_of_groups 10
+  temp_min_distance_group_placement 20
+  terrain_to_place_on DLC_SAVANNAH
+  set_scaling_to_map_size
+}
 
 /* regicide support */
 if REGICIDE
@@ -244,7 +278,7 @@ create_object DLC_GOAT {
 
 /* deer patch */
 /* DEER / DLC_OSTRICH / DLC_ZEBRA */
-create_object DEER {
+create_object DLC_ZEBRA {
   number_of_objects 4
   group_placement_radius 3
   set_loose_grouping

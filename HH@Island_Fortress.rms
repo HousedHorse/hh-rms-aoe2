@@ -20,11 +20,11 @@ base_terrain DLC_WATER5
 
 create_player_lands {
   terrain_type DLC_CRACKED
-  land_percent 50
+  land_percent 30
   if LUDIKRIS_MAP
-    base_size 30
+    base_size 40
   else
-    base_size 20
+    base_size 25
   endif
   left_border   0
   right_border  0
@@ -32,7 +32,7 @@ create_player_lands {
   bottom_border 0
   border_fuzziness 20
   clumping_factor 20
-  other_zone_avoidance_distance 5
+  other_zone_avoidance_distance 7
 }
 
 <ELEVATION_GENERATION>  /* hills */
@@ -107,15 +107,15 @@ if LUDIKRIS_MAP
 create_object WALL
 {
   set_place_for_every_player
-  min_distance_to_players       25
-  max_distance_to_players       25
+  min_distance_to_players       35
+  max_distance_to_players       35
 }
 else
 create_object WALL
 {
   set_place_for_every_player
-  min_distance_to_players       15
-  max_distance_to_players       15
+  min_distance_to_players       20
+  max_distance_to_players       20
 }
 endif
 

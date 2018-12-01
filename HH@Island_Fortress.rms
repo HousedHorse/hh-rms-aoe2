@@ -22,15 +22,9 @@ create_player_lands {
   terrain_type DLC_CRACKED
   land_percent 50
   if LUDIKRIS_MAP
-  create_object WALL
-  {
     base_size 24
-  }
   else
-  create_object WALL
-  {
     base_size 40
-  }
   endif
   left_border   0
   right_border  0

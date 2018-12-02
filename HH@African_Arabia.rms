@@ -71,10 +71,19 @@ create_terrain DESERT {
    DLC_MANGROVEFOREST */
 create_terrain PALM_DESERT {
   base_terrain DESERT /* change to base terrain of the map */
-  land_percent 16
-  number_of_clumps 8
+  land_percent 12
+  number_of_clumps 10
   set_scale_by_groups
   set_avoid_player_start_areas
+  spacing_to_other_terrain_types 5
+}
+create_terrain PALM_DESERT {
+  base_terrain DESERT /* change to base terrain of the map */
+  land_percent 1
+  number_of_clumps 3
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  spacing_to_other_terrain_types 3
 }
 
 create_terrain DLC_SAVANNAH {

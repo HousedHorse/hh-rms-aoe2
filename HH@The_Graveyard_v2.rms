@@ -293,79 +293,103 @@ create_object WOLF {
 
 */
 
-/* extra gold */
-create_object GOLD {
-  if TINY_MAP
-    number_of_groups 2
-    number_of_objects 3
-    min_distance_group_placement 5
-  elseif SMALL_MAP
-    number_of_groups 2
-    number_of_objects 3
-    min_distance_group_placement 5
-  elseif MEDIUM_MAP
-    number_of_groups 3
-    number_of_objects 3
-    group_variance 1
-    min_distance_group_placement 5
-  elseif LARGE_MAP
-    number_of_groups 3
-    number_of_objects 3
-    group_variance 1
-    min_distance_group_placement 5
-  elseif HUGE_MAP
-    number_of_groups 4
-    number_of_objects 4
-    group_variance 1
-    min_distance_group_placement 5
-  elseif GIGANTIC_MAP
-    number_of_groups 5
-    number_of_objects 4
-    group_variance 1
-    min_distance_group_placement 5
-  elseif LUDIKRIS_MAP
-    number_of_groups 250
-    number_of_objects 4
-    group_variance 1
-    temp_min_distance_group_placement  44
-  endif 
-  group_placement_radius 2
+if TINY_MAP
+create_object STONE
+{
+  number_of_groups           2    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players 30
+  min_distance_to_players       40
+  min_distance_group_placement  5
 }
+endif
 
-/* extra stone */
-create_object STONE {
-  if TINY_MAP
-    number_of_groups 1
-    min_distance_group_placement 5
-  elseif SMALL_MAP
-    number_of_groups 1
-    min_distance_group_placement 5
-  elseif MEDIUM_MAP
-    number_of_groups 2
-    min_distance_group_placement 5
-  elseif LARGE_MAP
-    number_of_groups 3
-    min_distance_group_placement 5
-  elseif HUGE_MAP
-    number_of_groups 4
-    min_distance_group_placement 5
-  elseif GIGANTIC_MAP
-    number_of_groups 5
-    min_distance_group_placement 5
-  elseif LUDIKRIS_MAP
-    number_of_groups 250
-    temp_min_distance_group_placement 44
-  endif 
-  number_of_objects 4
-  group_variance 1
-  group_placement_radius 2
+if SMALL_MAP
+create_object STONE
+{
+  number_of_groups           2    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players 30
+  min_distance_to_players       40
+  min_distance_group_placement  5
 }
+endif
+
+if MEDIUM_MAP
+create_object STONE
+{
+  number_of_groups           4    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  5
+}
+endif
+
+if LARGE_MAP
+create_object STONE
+{
+  number_of_groups           6    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  5
+}
+endif
+
+if HUGE_MAP
+create_object STONE
+{
+  number_of_groups           8    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  5
+}
+endif
+
+if GIGANTIC_MAP
+create_object STONE
+{
+  number_of_groups           10    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  5
+}
+endif
+
+if LUDIKRIS_MAP
+create_object STONE
+{
+  number_of_groups           250
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  temp_min_distance_group_placement  44
+}
+endif
 
 /* birds */
 /* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */

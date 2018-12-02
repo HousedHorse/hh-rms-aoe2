@@ -207,6 +207,7 @@ create_object GOLD {
   max_distance_to_players 16
   min_distance_group_placement 5
   max_distance_to_other_zones 7
+  terrain_to_place_on DESERT
 }
 
 /* medium gold */
@@ -220,6 +221,7 @@ create_object GOLD {
   max_distance_to_players 26
   min_distance_group_placement 5
   max_distance_to_other_zones 7
+  terrain_to_place_on DESERT
 }
 
 /* far gold */
@@ -233,6 +235,7 @@ create_object GOLD {
   max_distance_to_players 35
   min_distance_group_placement 5
   max_distance_to_other_zones 7
+  terrain_to_place_on DESERT
 }
 
 /* near stone */
@@ -246,6 +249,7 @@ create_object STONE {
   max_distance_to_players 18
   min_distance_group_placement 5
   max_distance_to_other_zones 7
+  terrain_to_place_on DESERT
 }
 
 /* far stone */
@@ -259,6 +263,7 @@ create_object STONE {
   max_distance_to_players 26
   min_distance_group_placement 5
   max_distance_to_other_zones 7
+  terrain_to_place_on DESERT
 }
 
 /* sheepies */

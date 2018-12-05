@@ -1,0 +1,51 @@
+
+/* **************************************** */
+/* Map:     '                               */
+/* Version: '                               */
+/* Author:  HousedHorse                     */
+/* Date:    '                               */
+/* **************************************** */
+
+/* some const definitions */
+#const DLC_FALCON   1056
+#const DEADTREE     404
+#const DEADTREE2    407
+#const GRASS_CLIFFS 16
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain GRASS
+
+create_player_lands {
+  terrain_type GRASS
+  land_percent 100
+  base_size 10
+  left_border   0
+  right_border  0
+  top_border    0
+  bottom_border 0
+  border_fuzziness 20
+  clumping_factor 20
+}
+
+<ELEVATION_GENERATION>  /* hills */
+
+<TERRAIN_GENERATION>    /* terrain patches */
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+create_object PETARD {
+  set_place_for_every_player
+  number_of_objects 300
+  min_distance_group_placement 1
+}
+
+/* birds */
+/* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
+create_object MACAW {
+  number_of_objects 6
+  set_scaling_to_map_size
+}

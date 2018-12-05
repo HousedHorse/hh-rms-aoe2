@@ -1,0 +1,151 @@
+
+/* **************************************** */
+/* Map:     '                               */
+/* Version: '                               */
+/* Author:  HousedHorse                     */
+/* Date:    '                               */
+/* **************************************** */
+
+/* some const definitions */
+#const DLC_FALCON   1056
+#const DEADTREE     404
+#const DEADTREE2    407
+#const GRASS_CLIFFS 16
+
+<PLAYER_SETUP>          /* basic setup */
+random_placement
+
+<LAND_GENERATION>       /* main lands and seas */
+base_terrain GRASS
+
+create_player_lands {
+  terrain_type GRASS
+  land_percent 100
+  base_size 10
+  left_border   0
+  right_border  0
+  top_border    0
+  bottom_border 0
+}
+
+<ELEVATION_GENERATION>  /* hills */
+/* arabia elevation settings */
+if TINY_MAP
+  create_elevation 4 {
+    base_terrain GRASS /* change this to match base_terrain of map */
+    number_of_clumps 10
+    number_of_tiles 2000
+    set_scale_by_groups
+    set_scale_by_size
+  }
+else
+  create_elevation 7 {
+    base_terrain GRASS /* change this to match base_terrain of map */
+    number_of_clumps 15
+    number_of_tiles 3000
+    set_scale_by_groups
+    set_scale_by_size
+  }
+endif
+
+<TERRAIN_GENERATION>    /* terrain patches */
+/* arabia forest settings */
+/* FOREST / BAMBOO / JUNGLE
+   PINE_FORST / PALM_DESERT
+   SNOW_FOREST / DLC_DRAGONFOREST
+   DLC_BAOBAFOREST / DLC_ACACIAFOREST
+   DLC_MANGROVEFOREST */
+
+<CONNECTION_GENERATION> /* bridges/roads */
+
+<OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
+
+/* ---Begin standard resources--- */
+
+/* standard start */
+create_object MARKET {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object TOWN_CENTER {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object MONASTERY {
+  set_place_for_every_player
+  group_placement_radius 18
+  min_distance_to_players 0
+  max_distance_to_players 0
+}
+create_object VILLAGER {
+  set_place_for_every_player
+  min_distance_to_players 6
+  max_distance_to_players 6
+}
+create_object MONK {
+  set_place_for_every_player
+  number_of_objects 1
+  number_of_groups 3
+  temp_min_distance_group_placement 3
+  min_distance_to_players 7
+  max_distance_to_players 9
+}
+create_object HOUSE {
+  set_place_for_every_player
+  number_of_objects 1
+  number_of_groups 3
+  min_distance_group_placement 2
+  min_distance_to_players 7
+  max_distance_to_players 13
+}
+
+/* 3 relics per map, 1 relic per player. ludikris map gets ludikris relics */
+create_object RELIC {
+  number_of_objects           99999
+  min_distance_to_players     10
+  temp_min_distance_group_placement 5
+  max_distance_to_other_zones 4
+}
+
+/* regicide support */
+if REGICIDE
+  create_object KING {
+    set_place_for_every_player
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+  create_object VILLAGER {
+    number_of_objects 7
+    set_place_for_every_player
+    min_distance_to_players 6
+    max_distance_to_players 6
+  }
+  create_object CASTLE {
+    set_place_for_every_player
+    min_distance_to_players 10
+    max_distance_to_players 10
+  }
+endif
+
+/* predatory lifeforms */
+/* WOLF / JAGUAR / DLC_KOMODO / DLC_TIGER 
+   DLC_LION / DLC_CROCODILE / DLC_BEAR */
+create_object WOLF {
+  number_of_objects 2
+  set_gaia_object_only
+  set_place_for_every_player
+  temp_min_distance_group_placement 12
+  min_distance_to_players 30
+  max_distance_to_players 40
+}
+
+/* birds */
+/* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
+create_object HAWK {
+  number_of_objects 6
+  set_scaling_to_map_size
+}

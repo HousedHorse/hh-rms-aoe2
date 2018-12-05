@@ -37,7 +37,7 @@ create_player_lands {
 <CONNECTION_GENERATION> /* bridges/roads */
 
 <OBJECTS_GENERATION>    /* units, buildings, resources, eyecandy */
-create_object PETARD {
+create_object SCOUT {
   set_place_for_every_player
   number_of_objects 300
   min_distance_group_placement 1

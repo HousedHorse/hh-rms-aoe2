@@ -45,26 +45,6 @@ create_player_lands {
   other_zone_avoidance_distance 30
 }
 
-<ELEVATION_GENERATION>  /* hills */
-/* arabia elevation settings */
-if TINY_MAP
-  create_elevation 4 {
-    base_terrain DESERT /* change this to match base_terrain of map */
-    number_of_clumps 5
-    number_of_tiles 1500
-    set_scale_by_groups
-    set_scale_by_size
-  }
-else
-  create_elevation 7 {
-    base_terrain DESERT /* change this to match base_terrain of map */
-    number_of_clumps 7
-    number_of_tiles 2200
-    set_scale_by_groups
-    set_scale_by_size
-  }
-endif
-
 <TERRAIN_GENERATION>    /* terrain patches */
 create_terrain PALM_DESERT {
   base_terrain DESERT /* change to base terrain of the map */
@@ -168,6 +148,7 @@ else
     min_distance_to_players     40
     temp_min_distance_group_placement 20
     max_distance_to_other_zones 4
+    terrain_to_place_on DESERT
   }
 endif
 

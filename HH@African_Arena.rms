@@ -145,9 +145,8 @@ if LUDIKRIS_MAP
 else
   create_object RELIC {
     number_of_objects            5
-    min_distance_to_players     40
+    min_distance_to_players     25
     temp_min_distance_group_placement 20
-    max_distance_to_other_zones 4
     terrain_to_place_on DESERT
   }
 endif

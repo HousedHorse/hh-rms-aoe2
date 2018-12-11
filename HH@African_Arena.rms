@@ -56,8 +56,8 @@ create_terrain PALM_DESERT {
 }
 create_terrain DIRT2 {
   base_terrain DESERT
-  land_percent 10
-  number_of_clumps 10
+  land_percent 7
+  number_of_clumps 8
   set_scale_by_groups
   set_avoid_player_start_areas
 }
@@ -542,7 +542,7 @@ create_object DLC_ELEPHANT {
   temp_min_distance_group_placement 9
   terrain_to_place_on DIRT2
   set_scaling_to_map_size
-  min_distance_to_players     33
+  min_distance_to_players     35
 }
 
 /* birds */

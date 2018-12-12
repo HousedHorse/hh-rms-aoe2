@@ -69,7 +69,7 @@ create_terrain DESERT {
    SNOW_FOREST / DLC_DRAGONFOREST
    DLC_BAOBAFOREST / DLC_ACACIAFOREST
    DLC_MANGROVEFOREST */
-create_terrain DEADTREE2 {
+create_terrain PALM_DESERT {
   base_terrain DESERT /* change to base terrain of the map */
   land_percent 12
   number_of_clumps 10
@@ -77,7 +77,7 @@ create_terrain DEADTREE2 {
   set_avoid_player_start_areas
   spacing_to_other_terrain_types 5
 }
-create_terrain DEADTREE {
+create_terrain PALM_DESERT {
   base_terrain DESERT /* change to base terrain of the map */
   land_percent 1
   number_of_clumps 3

@@ -16,14 +16,7 @@
 random_placement
 
 <LAND_GENERATION>       /* main lands and seas */
-base_terrain SNOW
-
-create_land {
-  terrain_type WATER
-  land_percent 100
-  border_fuzziness 100
-  clumping_factor  100
-}
+base_terrain WATER
 
 create_player_lands {
   terrain_type SNOW
@@ -328,10 +321,10 @@ create_object DLC_BEAR {
   max_distance_to_players 40
 }
 create_object DLC_COW {
-  number_of_objects 18
+  number_of_objects 8
   set_gaia_object_only
   set_scaling_to_map_size
-  temp_min_distance_group_placement 6
+  temp_min_distance_group_placement 20
   min_distance_to_players 30
 }
 

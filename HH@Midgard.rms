@@ -16,39 +16,36 @@
 random_placement
 
 <LAND_GENERATION>       /* main lands and seas */
-base_terrain DLC_WATER4
+base_terrain SNOW
+
+create_land {
+  terrain_type WATER
+  land_percent 100
+  border_fuzziness 100
+  clumping_factor  100
+}
 
 create_player_lands {
   terrain_type SNOW
-  land_percent 100
+  land_percent 60
   base_size 10
-  left_border   0
-  right_border  0
-  top_border    0
-  bottom_border 0
+  left_border   8
+  right_border  8
+  top_border    8
+  bottom_border 8
   border_fuzziness 20
   clumping_factor 20
 }
 
 <ELEVATION_GENERATION>  /* hills */
 /* arabia elevation settings */
-if TINY_MAP
-  create_elevation 2 {
-    base_terrain SNOW /* change this to match base_terrain of map */
-    number_of_clumps 3
-    number_of_tiles 80
-    set_scale_by_groups
-    set_scale_by_size
-  }
-else
-  create_elevation 3 {
-    base_terrain SNOW /* change this to match base_terrain of map */
-    number_of_clumps 5
-    number_of_tiles 100
-    set_scale_by_groups
-    set_scale_by_size
-  }
-endif
+create_elevation 7 {
+  base_terrain SNOW /* change this to match base_terrain of map */
+  number_of_clumps 14
+  number_of_tiles 2000
+  set_scale_by_groups
+  set_scale_by_size
+}
 
 <TERRAIN_GENERATION>    /* terrain patches */
 /* replace cliff grass with desired terrain */
@@ -64,12 +61,32 @@ create_terrain GRASS {
    SNOW_FOREST / DLC_DRAGONFOREST
    DLC_BAOBAFOREST / DLC_ACACIAFOREST
    DLC_MANGROVEFOREST */
-create_terrain FOREST {
-  base_terrain GRASS /* change to base terrain of the map */
-  land_percent 12
+create_terrain SNOW_FOREST {
+  base_terrain SNOW /* change to base terrain of the map */
+  land_percent 9
   number_of_clumps 10
   set_scale_by_groups
   set_avoid_player_start_areas
+  spacing_to_other_terrain_types 5
+}
+create_terrain SNOW_FOREST {
+  base_terrain SNOW /* change to base terrain of the map */
+  land_percent 1
+  number_of_clumps 3
+  set_scale_by_groups
+  set_avoid_player_start_areas
+  spacing_to_other_terrain_types 5
+}
+create_terrain MED_WATER {
+  base_terrain WATER /* change to base terrain of the map */
+  land_percent 100
+  number_of_clumps 9999
+  spacing_to_other_terrain_types 3
+}
+create_terrain DLC_WATER4 {
+  base_terrain MED_WATER /* change to base terrain of the map */
+  land_percent 100
+  number_of_clumps 9999
   spacing_to_other_terrain_types 5
 }
 
@@ -298,9 +315,24 @@ create_object WOLF {
   number_of_objects 2
   set_gaia_object_only
   set_scaling_to_map_size
-  temp_min_distance_group_placement 12
+  temp_min_distance_group_placement 20
   min_distance_to_players 30
   max_distance_to_players 40
+}
+create_object DLC_BEAR {
+  number_of_objects 1
+  set_gaia_object_only
+  set_scaling_to_map_size
+  temp_min_distance_group_placement 20
+  min_distance_to_players 30
+  max_distance_to_players 40
+}
+create_object DLC_COW {
+  number_of_objects 18
+  set_gaia_object_only
+  set_scaling_to_map_size
+  temp_min_distance_group_placement 6
+  min_distance_to_players 30
 }
 
 /* EXTRA GOLD */
@@ -503,7 +535,45 @@ endif
 
 /* birds */
 /* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
-create_object HAWK {
+create_object DLC_FALCON {
   number_of_objects 6
   set_scaling_to_map_size
+}
+
+/* fishies */
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 25
+  number_of_objects 999999
+}
+create_object SHORE_FISH {
+  temp_min_distance_group_placement 15
+  number_of_objects 999999
+}
+
+create_object FISH {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 2
+  number_of_objects 99999
+  min_distance_group_placement 2
+}
+
+create_object SNAPPER {
+  temp_min_distance_group_placement 6
+  max_distance_to_other_zones 4
+  number_of_objects 99999
+  min_distance_group_placement 3
+}
+
+create_object MARLIN1 {
+  temp_min_distance_group_placement 12
+  max_distance_to_other_zones 5
+  number_of_objects 99999
+  min_distance_group_placement 3
+}
+
+create_object MARLIN2 {
+  temp_min_distance_group_placement 8
+  max_distance_to_other_zones 7
+  number_of_objects 99999
+  min_distance_group_placement 3
 }

@@ -1,0 +1,41 @@
+0,Grass 1
+1,"Water, Shallow"
+2,Beach
+3,Dirt 3
+4,Shallows
+5,Leaves
+6,Dirt 1
+7,Farm
+8,Dead Farm
+9,Grass 3
+0A,Forest
+0B,Dirt 2
+0C,Grass 2
+0D,Palm Forest
+0E,Desert
+0F,"Water, No Shore"
+10,Grass,(?)
+11,Jungle,
+12,Bamboo,
+13,Pine Forest,
+14,Oak Forest,
+15,Snow Pine Forest,
+16,"Water, Deep",
+17,"Water, Medium",
+18,Road,
+19,Broken Road,
+1A,Trail,(unused)
+1B,Dirt 2,11
+1C,"Water, No Shore",
+1D,"Farm, unplanted",
+1E,"Farm, small plants",
+1F,"Farm, large plants",
+20,Snow,
+21,Snow Dirt,
+22,Snow Grass,
+23,Ice,
+24,Snow Dirt,33
+25,Ice/Snow Shore,
+26,Ice Road,
+27,Fungus Road,
+28,Road,24

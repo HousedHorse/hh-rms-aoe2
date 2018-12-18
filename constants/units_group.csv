@@ -1,0 +1,880 @@
+492,Arbalest
+4,Archer
+39,Cavalry Archer
+24,Crossbowman
+474,Heavy Cavalry Archer
+
+567,Champion
+751,Eagle Warrior
+752,Elite Eagle Warrior
+359,Halberdier
+77,Long Swordsman
+74,Militia
+75,Man At Arms
+358,Pikeman
+93,Spearman
+473,Two Handed Swordsman
+
+94,Berserk2
+692,Berserk
+40,Cataphract
+73,Chu Ko Nu
+771,Conquistador
+694,Elite Berserk
+553,Elite Cataphract
+559,Elite Chu Ko Nu
+773,Elite Conquistador
+596,Elite Genitour
+555,Elite Huskarl
+761,Elite Huskarl
+726,Elite Jaguar Warrior
+557,Elite Janissary
+530,Elite Longbowman
+561,Elite Mangudai
+556,Elite Mameluke
+765,Elite Plumed Archer
+560,Elite Samurai
+6,Elite Skirmisher
+757,Elite Tarkan
+554,Elite Teutonic Knight
+531,Elite Throwing Axeman
+558,Elite War Elephant
+829,Elite War Wagon
+534,Elite Woad Raider
+583,Genitour
+41,Huskarl
+759,Huskarl
+441,Hussar
+725,Jaguar Warrior
+46,Janissary
+434,King
+8,Longbowman
+282,Mameluke
+11,Mangudai
+440,Petard
+763,Plumed Archer
+291,Samurai
+7,Skirmisher
+755,Tarkan
+25,Teutonic Knight
+281,Throwing Axeman
+42,Trebuchet (Unpacked)
+331,Trebuchet (Packed)
+239,War Elephant
+827,War Wagon
+232,Woad Raider
+
+48,Boar
+858,Broken Cart
+709,Cactus
+241,Cracks
+723,Crater
+65,Deer
+333,Deer
+89,Dire Wolf
+455,Dorado
+851,Es Flag
+53,Fish (Perch)
+600,Flag A
+601,Flag B
+602,Flag C
+603,Flag D
+604,Flag E
+859,Flower Bed
+334,Flowers 1
+335,Flowers 2
+336,Flowers 3
+337,Flowers 4
+59,Forage Bush
+66,Gold
+820,Grave
+96,Hawk
+857,Hay Stack
+821,Head
+814,Horse
+810,Iron Boar
+812,Jaguar
+822,Javelina
+816,Macaw
+837,Map Revealer
+450,Marlin1
+451,Marlin2
+744,Mountain 3
+745,Mountain 4
+720,Nine Bands
+855,Old Stone Head
+339,Path 1
+340,Path 2
+341,Path 3
+338,Path 4
+688,Piece Of The True Cross
+818,Plants
+623,Rock
+856,Roman Ruins
+143,Rubble 1 X 1
+863,Rubble 1 X 1
+144,Rubble 2 X 2
+864,Rubble 2 X 2
+145,Rubble 3 X 3
+865,Rubble 3 X 3
+146,Rubble 4 X 4
+148,Rubble 5 X 5
+147,Rubble Of Pyramid
+711,Rugs
+456,Salmon
+389,Sea Rocks 1
+396,Sea Rocks 2
+594,Sheep
+721,Shipwreck
+722,Shipwreck2
+819,Sign
+458,Snapper
+69,Shore Fish
+710,Skeleton
+817,Statue
+862,Stormy Dog
+102,Stone
+499,Torch
+854,Torch Converting
+457,Tuna
+833,Turkey
+835,Wild Horse
+126,Wolf
+
+844,Admiral Yi Sun Shin
+169,Aethelfirth
+197,Alexander Nevski
+777,Attila The Hun
+177,Archbishop
+686,Archers Of The Eyes
+682,Bad Neighbor
+730,Bad Neighbor Packed
+167,Belisarius
+779,Bleda The Hun
+165,Charlemagne
+424,Charles Martel
+646,Constable Richemont
+638,Duke D Alencon
+198,El Cid
+824,El Cid Campeador
+733,Emperor In A Barrel
+171,Erik The Red
+632,Frankish Paladin
+163,Friar Tuck
+860,Furious The Monkey Boy
+861,Piece Of Furious
+175,Gawain
+731,Genghis Khan
+683,Gods Own Sling
+729,Gods Own Sling Packed
+648,Guy Josselyne
+426,Harald Hardraade
+847,Henry V
+428,Hrolf The Ganger
+700,Hunting Wolf
+842,Imam
+644,Jean De Lorrain
+650,Jean Bureau
+430,Joan The Maid
+629,Joan Of Arc
+840,King Alfonso
+173,King Arthur
+838,King Sancho
+195,Kitabatake
+702,Kushluk
+640,La Hire
+174,Lancelot
+642,Lord De Graville
+680,Master Of The Templar
+196,Minamoto
+176,Mordred
+845,Nobunaga
+707,Ornlu The Wolf
+781,Pope Leo I
+202,Rabid Wolf
+678,Reynald De Chatillon
+160,Richard The Lionharted
+200,Robin Hood
+166,Roland
+706,Saboteur
+852,Scythian Scout
+783,Scythian Wild Woman
+704,Shah
+170,Siegfried
+636,Sieur Bertrand
+634,Sieur De Metz
+652,Sir John Fastolf
+164,Sherrif Of Notingham
+698,Subotai
+172,Tamerlane
+161,The Black Prince
+168,Theodoric The Goth
+849,William The Conqueror
+432,William Wallace
+
+204,Trade Cart (F)
+128,Trade Cart (E)
+
+287,British Relic
+288,Byzantine Relic
+289,Chinese Relic
+290,Frankish Relic
+292,Gothic Relic
+294,Japanese Relic
+775,Missionary
+125,Monk
+300,Monk With British Relic
+301,Monk With Byzantine Relic
+302,Monk With Chinese Relic
+303,Monk With Frankish Relic
+304,Monk With Gothic Relic
+305,Monk With Japanese Relic
+306,Monk With Persian Relic
+307,Monk With Saracen Relic
+308,Monk With Teutonic Relic
+312,Monk With Turkish Relic
+286,Monk With Relic
+285,Relic
+295,Persian Relic
+296,Saracen Relic
+297,Teutonic Relic
+298,Turkish Relic
+
+493,Advanced Heavy Crossbowman
+748,Cobra Car
+749,Cobra (No Select)
+544,FLDOG
+76,Heavy Swordsman
+299,Infiltrator
+158,OUTLW
+479,PMANG
+444,PTWC
+577,RCARC
+575,RCSWD
+571,RFARC
+573,RFSWD
+
+35,Battering Ram
+36,Bombard Cannon
+422,Capped Ram
+5,Hand Cannoneer
+542,Heavy Scorpion
+280,Mangonel
+550,Onager
+279,Scorpion
+588,Siege Onager
+548,Siege Ram
+
+536,ABGAL
+535,BDGAL
+61,Canoe (61)
+443,Canoe (443)
+420,Cannon Galleon
+527,Demolition Ship
+691,Elite Cannon Galleon
+533,Elite Longboat
+832,Elite Turtle Ship
+250,Longboat
+532,Fast Fire Ship
+529,Fire Ship
+13,Fishing Ship
+539,Galley
+528,Heavy Demolition Ship
+15,Junk
+436,OMTBO
+438,STRBO
+17,Trade Cog
+545,Transport Ship
+831,Turtle Ship
+21,War Galley
+
+329,Camel
+283,Cavalier
+443,Canoe
+442,Galleon
+330,Heavy Camel
+38,Knight
+546,Light Cavalry
+37,Light Cavalry (37)
+569,Paladin
+448,Scout
+
+207,VDML (statue)
+212,"Villager, F builder"
+118,"Villager, M builder"
+214,"Villager, F farmer"
+259,"Villager, M farmer"
+57,"Villager, F fisher"
+56,"Villager, M fisher"
+354,"Villager, F forager"
+120,"Villager, M forager"
+581,"Villager, F gold miner"
+579,"Villager, M gold miner"
+216,"Villager, F hunter"
+83,"Villager, M"
+293,"Villager, F"
+122,"Villager, M hunter"
+218,"Villager, F lumberjack"
+123,"Villager, M lumberjack"
+222,"Villager, F repairer"
+156,"Villager, M repairer"
+590,"Villager, F shepherd"
+592,"Villager, M shepherd"
+220,"Villager, F stone miner"
+124,"Villager, M stone miner"
+206,VMDL
+
+497,Dead Adv Heavy Crossbowman
+3,Dead Archer
+138,Dead Archer
+687,Dead Archers Of The Eyes
+778,Dead Atilla The Hun
+23,Dead Battering Rams
+693,Dead Berserk
+780,Dead Bleda The Hun
+356,Dead Boar
+16,Dead Bombard Canon
+494,Dead Camel
+423,Dead Capped Ram
+27,Dead Cataphract
+139,Dead Cavaliers
+34,Dead Cavalry Archer
+151,Dead Champion
+772,Dead Conquistador
+115,Dead Crossbowman
+26,Dead Crossbowman
+28,Dead Crossbowman
+496,Dead Crossbowman
+43,Dead Deer
+754,Dead Eagle Warrior
+825,Dead El Cid Campeador
+695,Dead Elite Berserk
+435,Dead Erik The Red
+62,Dead (Elite) Huskarl
+44,Dead (Elite) Mameluke
+154,Dead (Elite) Throwing Axeman
+633,Dead Frankish Paladin
+113,Dead Heavy Camel
+815,Dead Horse
+762,Dead Huskarl
+843,Dead Imam
+622,Dead Iron Boar
+811,Dead Iron Boar
+813,Dead Jaguar
+823,Dead Javelina
+630,Dead Joan Of Arc
+431,Dead Joan The Maid
+841,Dead King Alfonso
+839,Dead King Sancho
+111,Dead Knight
+547,Dead Light Cavalry
+180,Dead Long Swordsman
+495,Dead Mameluke
+675,Dead Mangonel
+157,Dead Man At Arms
+152,Dead Militia
+776,Dead Missionary
+134,Dead Monk
+121,Dead Onager
+708,Dead Ornlu The Wolf
+570,Dead Paladin
+98,Dead People
+750,Dead People 2
+135,Dead People On Horse
+22,Dead People With Hammer
+764,Dead Plumed Archer
+501,Dead Pikeman
+502,Dead Pikeman
+578,Dead Rcarc
+576,Dead Rcswd
+572,Dead Rfarc (?)
+574,Dead Rfswd
+149,Dead Scorpion
+543,Dead Scorpion
+449,Dead Scytian Scout (?)
+853,Dead Scythian Scout
+784,Dead Scythian Wild Woman
+705,Dead Shah (?)
+631,Dead Subotai
+595,Dead Sheep
+589,Dead Siege Onager
+549,Dead Siege Ram
+238,Dead Skirmisher
+100,Dead Spearman
+107,Dead Spearman
+140,Dead Spearman
+480,Dead Tarkan
+756,Dead Elite Tarkan
+181,Dead Teutonic Knight
+425,Dead Throwing Axeman
+205,Dead Trade Cart
+178,Dead Trade Cart
+29,"Trading Cog, Dead"
+194,Dead Trebuchet
+735,Dead Trebuchet
+568,Dead Two Handed Swordsman
+60,"Dead Villager, F"
+211,"Dead Villager, F (idle)"
+213,"Dead Villager, F (builder)"
+215,"Dead Villager, F (farmer)"
+355,Dead Villager
+582,Dead Villager
+217,Dead Villager
+219,Dead Villager
+223,Dead Villager
+591,Dead Villager
+221,Dead Villager
+58,"Dead Villager, M"
+230,Dead Villager
+228,Dead Villager
+353,Dead Villager
+229,Dead Villager
+580,Dead Villager
+227,Dead Villager
+225,Dead Villager
+226,Dead Villager
+593,Dead Villager
+224,Dead Villager
+136,Dead War Elephant
+828,Dead War Wagon
+233,Dead Woad Raider
+237,Dead Wolf
+99,Decaying Corpses
+
+87,Archery Range
+10,Archery Range
+14,Archery Range
+12,Barracks
+498,Barracks
+132,Barracks
+20,Barracks
+103,Blacksmith
+105,Blacksmith
+18,Blacksmith
+19,Blacksmith
+236,Bombard Tower
+607,Bridge A Bottom
+606,Bridge A Middle
+738,Bridge A Middle Broken
+739,Bridge A Middle Broken 2
+740,Bridge A Middle Broken 3
+605,Bridge A Top
+610,Bridge B Bottom
+609,Bridge B Middle
+741,Bridge B Middle Broken
+742,Bridge B Middle Broken 2
+743,Bridge B Middle Broken 3
+608,Bridge B Top
+82,Castle (C)
+33,Castle (I)
+599,Cathedral
+445,Church4
+45,Dock (D 45)
+805,Dock (D 805)
+806,Dock (D 806)
+807,Dock (D 807)
+808,Dock (D 808)
+133,Dock (F)
+47,Dock (C)
+51,Dock (I)
+690,Dome Of The Rock
+278,Expired Fishtrap
+50,Farm
+199,Fish Trap
+696,Great Pyramid
+79,Guard Tower (F)
+234,Guard Tower (C/I)
+70,House (D)
+463,House (F)
+464,House (C/I)
+465,House (C/I)
+235,Keep (I)
+562,Lumber Camp (D)
+563,Lumber Camp (F)
+564,Lumber Camp (C)
+565,Lumber Camp (I)
+84,Market (F)
+116,Market (C)
+137,Market (I)
+68,Mill (D)
+129,Mill (F)
+130,Mill (C)
+131,Mill (I)
+584,Mining Camp (D)
+585,Mining Camp (C/I 585)
+586,Mining Camp (C/I 586)
+587,Mining Camp (C/I 587)
+104,Monastery (104)
+30,Monastery (30)
+31,Monastery (31)
+32,Monastery (32)
+826,Monument
+655,Mosque
+598,Outpost
+72,Palisade Wall
+624,Pavilion
+626,Pavilion2
+625,Pavilion3
+689,Pyramid
+446,Port
+345,Ruins
+785,Sea Tower
+49,Siege Workshop (49)
+150,Siege Workshop (150)
+86,Stable (D)
+101,Stable (C 101)
+153,Stable (C 153)
+684,The Accursed Tower
+685,The Tower Of Flies
+71,Town Center (D 71),,,,,,,,
+109,Town Center (D 109),,,,,,,,
+141,Town Center (D 141),,,,,,,,
+484,Town Center (D 484),,,,,,,,
+597,Town Center (D 597),,,,,,,,
+142,Town Center (142),,,,,,,,
+621,Town Center (D 621),,,,,,,,
+481,Town Center Half (C),,,,,,,,
+482,Town Center Half2 (C),,,,,,,,
+483,Town Center Half3 (C),,,,,,,,
+611,Town Center Half (I),,,,,,,,
+612,Town Center Half2 (I),,,,,,,,
+613,Town Center Half3 (I),,,,,,,,
+614,Town Center Half (F),,,,,,,,
+615,Town Center Half2 (F),,,,,,,,
+616,Town Center Half3 (F),,,,,,,,
+617,Town Center (D 617),,,,,,,,
+618,Town Center Half (D),,,,,,,,
+619,Town Center Half2 (D),,,,,,,,
+620,Town Center Half3 (D),,,,,,,,
+110,Trade Workshop,,,,,,,,
+179,Trade Workshop (NoPic),,,,,,,,
+208,TWAL,,,,,,,,
+209,University (C),,,,,,,,
+210,University (I),,,,,,,,
+276,Wonder,,,,,,,,
+712,Yurt,,,,,,,,
+713,Yurt2,,,,,,,,
+714,Yurt3,,,,,,,,
+715,Yurt4,,,,,,,,
+716,Yurt5,,,,,,,,
+717,Yurt6,,,,,,,,
+718,Yurt7
+719,Yurt8
+
+64,"Gate, /"
+78,"Gate, / Open"
+88,"Gate, \"
+91,"Gate, \ Open"
+487,"Gate, /"
+490,"Gate, \"
+491,"Gate, \"
+659,"Gate, --"
+661,"Gate, -- Open"
+665,"Gate, --"
+666,"Gate, --"
+667,"Gate, |"
+669,"Gate, | Open"
+673,"Gate, |"
+674,"Gate, |"
+81,Gate Wall (81)
+95,Gate Wall (95)
+663,Gate Wall (663)
+671,Gate Wall (671)
+63,"Fortified Gate, /"
+67,"Fortified Gate, / Open"
+85,"Fortified Gate, \"
+90,"Fortified Gate, \ Open"
+488,"Fortified Gate,  /"
+660,"Fortified Gate,  --"
+662,"Fortified Gate, -- Open"
+668,"Fortified Gate, |"
+670,"Fortified Gate, | Open"
+80,Fortified Gate Wall (80)
+92,Fortified Gate Wall (92)
+664,Fortified Gate Wall (664)
+672,Fortified Gate Wall (672)
+155,Foritifed Wall
+789,"Sea Gate, /"
+790,"Sea Gate, / Open"
+792,"Sea Gate, /"
+793,"Sea Gate, \"
+794,"Sea Gate, \ Open"
+796,"Sea Gate, \"
+797,"Sea Gate, --"
+798,"Sea Gate, -- Open"
+800,"Sea Gate, --"
+801,"Sea Gate, |"
+802,"Sea Gate, | Open"
+804,"Sea Gate, |"
+791,Sea Gate Wall (791)
+795,Sea Gate Wall (795)
+799,Sea Gate Wall (799)
+803,Sea Gate Wall (803)
+117,Stone Wall
+
+265,Brown Spots (265)
+266,Brown Spots (266)
+271,Brown Spots (271)
+272,Brown Spots (272)
+270,Part Of Clif (270)
+273,Part Of Clif (273)
+
+348,Bamboo Tree
+411,Forest Tree
+414,Jungle Tree
+349,Oak Tree
+351,Palm Forest Tree
+350,Pine Tree
+413,Snow Pine Tree
+415,Stump (415)
+809,Stump (809)
+399,Tree A
+400,Tree B
+401,Tree C
+402,Tree D
+403,Tree E
+404,Tree F
+405,Tree G
+406,Tree H
+407,Tree I
+408,Tree J
+409,Tree K
+410,Tree L
+284,Tree TD
+
+9,"Arrow, longbow"
+54,Arrows (54)
+315,Arrows2
+316,Arrows2 (_2)
+317,Arrows2 (_3)
+318,Arrows2 (_4)
+319,Arrows2 (_5)
+320,Arrows2 (_6)
+321,Arrows2 (_7)
+322,Arrows2 (_8)
+485,Arrows2 (_9)
+363,Arrows3
+364,Arrows3 (_2)
+477,Arrows3 (_3)
+478,Arrows3 (_4)
+503,Arrows3 (_5)
+504,Arrows3 (_6)
+505,Arrows3 (_7)
+507,Arrows3 (_8)
+509,Arrows3 (_9)
+510,Arrows3 (_10)
+511,Arrows3 (_11)
+512,Arrows3 (_12)
+514,Arrows3 (_13)
+537,Arrows3 (_14)
+538,Arrows3 (_15)
+540,Arrows3 (_16)
+746,Arrows3 (_17)
+786,Arrows4 (_18)
+787,Arrows4 (_19)
+328,Flaming Arrow
+375,Flaming Arrow 1
+466,Flaming Arrow 2
+475,Flaming Arrow 3
+476,Flaming Arrow 4
+516,Flaming Arrow 5
+517,Flaming Arrow 6
+518,Flaming Arrow 7
+519,Flaming Arrow 8
+521,Flaming Arrow 9
+522,Flaming Arrow 10
+523,Flaming Arrow 11
+524,Flaming Arrow 12
+525,Flaming Arrow 13
+541,Flaming Arrow 14
+747,Flaming Arrow 15
+378,Flaming Scorpion Arrow
+470,Flaming Scorpion Arrow 1
+471,Flaming Scorpion Arrow 2
+628,Flaming Scorpion Arrow 3
+246,Large Flaming Arrow (NoS)
+381,Large Flaming Arrow (S)
+385,Large Flaming Arrow (S2)
+97,Heavy Scorpion Arrow
+245,Heavy Scorpion Arrow 1
+367,Scorpion Arrow
+372,Scorpion Arrow 1
+627,Scorpion Arrow 2
+360,Strange Arrows
+
+737,Brown Thingies
+380,Bullet 1
+656,Bullet 2
+376,Flaming Spears
+377,Flaming Spears 2
+520,Flaming Spears 3
+515,Axe
+310,Mountain 1
+311,Mountain 2
+676,Orange Balls
+677,Orange Balls (t)
+352,OREMN
+262,Pile Of Food
+252,Pile Of Gold
+248,Pile Of Stone
+253,Pile Of Wood
+249,POREX
+447,Purple Spots
+159,Relic Cart
+244,Flaming Ball
+526,Flaming Ball 2
+552,Flaming Ball 3
+657,Shadow Of Small Rock
+658,Small Flaming Ball With Bullet
+468,Small Flaming Rock (S)
+469,Small Flaming Rock (S2)
+242,Small Rock
+313,Small Rock (water)
+314,Small Rock 2
+324,Small Rock 3
+325,Small Rock 4
+326,Small Rock 5
+327,Small Rock 6,
+368,Small Rock (S),
+374,Small Rock (S2),
+506,Small Rock (S3),
+767,Small Rock (S4),
+462,Small Round Flame,
+371,Small White Rock,
+513,Small White Rock 2,
+365,Spear,
+366,Spear 2,
+508,Spear 3,
+417,Strange Thingy,
+736,Sword That Rotates,
+247,Tiny Plume Of Smoke ,
+369,Tiny White Rock (?),
+551,Tiny White Rock,
+728,White  Spots
+274,?274: White Map Spots
+452,?452: Green Map Water Spots
+453,?453: Green Map Water Spots
+454,?454: Green Map Water Spots
+459,?459: Green Map Water Spots
+
+1,OLD_GATOR
+52,"Fish 1, Disabled"
+55,"Fishing Ship, Dead"
+106,"Infiltrator, Dead"
+108,"Junk, Dead"
+112,Flare
+114,"Longboat, Dead"
+119,"Fisherman, disabled"
+127,"Explorer, Old"
+162,FLAGX
+182,TMISA
+183,TMISB
+184,TMISC
+185,TMISD
+186,TMISE
+187,TMISF
+188,TMISG
+189,TMISH
+190,TMISI
+191,TMISJ
+192,TMISK
+193,TMISL
+201,FLR_R
+203,"Rabid Wolf, Dead"
+240,TERRC
+243,DOPL
+251,OLD-GOLDMINER
+254,PILE1
+255,PILE2
+256,PILE3
+257,PILE4
+258,PILE6
+260,"Fish3, Disabled"
+261,PILE8
+263,"Fish4, Disabled"
+264,Cliff 1
+267,Cliff 4
+268,Cliff 5
+269,Cliff 6
+309,Monk with Turking Relic
+323,"Stone, Catapult 1"
+332,Flare 3
+342,TERRU
+343,TERRV
+344,TERRW
+346,TERRY
+347,TERRZ
+370,"Fish2, Disabled"
+390,TERRB
+391,TERRD
+392,TERRE
+393,TERRF
+394,TERRH
+395,TERRI
+397,TERRK
+398,TERRL
+416,Debris
+418,TROCK
+419,Debris B
+421,"Cannon Galleon, Dead"
+427,"Harold Hadraade, Dead"
+429,"Hrolf The Ganger, D"
+437,"OMTBO, D"
+439,"STRRBO, D"
+460,WHAL1
+461,WHAL2
+635,"Sieur De Metz, D"
+637,"Sieur Bertrand, D"
+639,"Duke D'Alencon, D"
+641,"La Hire, D"
+643,"Lord De Graville, D"
+645,"Jean De Lorrain, D"
+647,"Constable Richemont, D"
+649,"Guy Josselyne, D"
+651,"Jean Bureau, D"
+653,"Sir John Fastolf, D"
+654,S_SMOKE
+679,"Reynald De Chatillon, D"
+681,"Master Of The Templar, D"
+697,Flare 4
+699,"Subotai, D"
+701,"Hunting Wolf, D"
+703,"Kushluk, D"
+724,"Genitour, Dead"
+732,"Genghis Khan, D"
+734,"Emperor In A Barrel, D"
+760,"Huskarl, Dead"
+766,"Elite Plumed Archer, D"
+774,"Elite Conquistador, D"
+782,"Pope Leo I, D"
+830,"Elite War Wagon, D"
+834,"Turkey, Dead"
+836,"Wild Horse, D"
+846,"Nobunaga, D"
+848,"Henry V, D"
+850,?850
+
+2,CRASH2
+231,CRASH231
+275,CRASH275
+277,CRASH277
+357,"Farm, Dead (CRASH)"
+361,CRASH361
+362,CRASH362
+379,CRASH379
+382,CRASH382
+383,CRASH383
+384,CRASH384
+386,CRASH386
+387,CRASH387
+412,CRASH412
+467,CRASH467
+472,CRASH472
+486,CRASH486
+489,CRASH489
+727,CRASH727
+753,CRASH753
+758,CRASH758
+768,CRASH768
+769,CRASH769
+770,CRASH770

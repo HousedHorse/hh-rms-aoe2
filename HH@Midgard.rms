@@ -247,7 +247,7 @@ create_object STONE {
 /* SHEEP / TURKEY / DLC_GOAT
    DLC_LLAMA / DLC_WATERBUFFALO
    DLC_COW */
-create_object SHEEP {
+create_object DLC_COW {
   number_of_objects 4
   number_of_groups 2
   set_gaia_object_only

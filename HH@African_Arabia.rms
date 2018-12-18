@@ -157,10 +157,10 @@ create_object DLC_ELEPHANT {
   group_variance 1
   group_placement_radius 6
   number_of_groups 10
-  temp_min_distance_group_placement 20
+  temp_min_distance_group_placement 9
   terrain_to_place_on DLC_SAVANNAH
   set_scaling_to_map_size
-  min_distance_to_players     40
+  min_distance_to_players     35
 }
 
 create_object PALMTREE {
@@ -363,8 +363,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -376,8 +376,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -390,8 +390,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -404,8 +404,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -418,8 +418,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -432,8 +432,8 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -446,7 +446,7 @@ create_object GOLD
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   temp_min_distance_group_placement  44
 }
 endif
@@ -462,8 +462,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -476,8 +476,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -490,8 +490,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -504,8 +504,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -518,8 +518,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -532,8 +532,8 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_to_players       30
+  min_distance_group_placement  7
 }
 endif
 
@@ -546,7 +546,7 @@ create_object STONE
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
-  min_distance_to_players       40
+  min_distance_to_players       30
   temp_min_distance_group_placement  44
 }
 endif

@@ -353,6 +353,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -367,6 +368,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -381,6 +383,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -395,6 +398,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -409,6 +413,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -423,6 +428,7 @@ create_object GOLD
   set_gaia_object_only
   min_distance_to_players       40
   temp_min_distance_group_placement  44
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -439,6 +445,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -453,6 +460,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -467,6 +475,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -481,6 +490,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -495,6 +505,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -509,6 +520,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   min_distance_group_placement  5
+  max_distance_to_other_zones 7
 }
 endif
 
@@ -523,6 +535,7 @@ create_object STONE
   set_gaia_object_only
   min_distance_to_players       40
   temp_min_distance_group_placement  44
+  max_distance_to_other_zones 7
 }
 endif
 

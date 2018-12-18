@@ -7,7 +7,7 @@
 /* **************************************** */
 
 /* some const definitions */
-#const DLC_FALCON   1056
+#const DLC_FALCON   1056 
 #const DEADTREE     404
 #const DEADTREE2    407
 #const GRASS_CLIFFS 16
@@ -20,12 +20,12 @@ base_terrain WATER
 
 create_player_lands {
   terrain_type SNOW
-  land_percent 60
+  land_percent 100
   base_size 10
-  left_border   8
-  right_border  8
-  top_border    8
-  bottom_border 8
+  left_border   9
+  right_border  9
+  top_border    9
+  bottom_border 9
   border_fuzziness 20
   clumping_factor 20
 }

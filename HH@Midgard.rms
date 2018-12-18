@@ -333,26 +333,26 @@ create_object DLC_COW {
 if TINY_MAP
 create_object GOLD
 {
-  number_of_groups           4    
+  number_of_groups           2    
   number_of_objects          4
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
 }
 endif
 
 if SMALL_MAP
 create_object GOLD
 {
-  number_of_groups           4    
+  number_of_groups           2    
   number_of_objects          4
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -360,14 +360,14 @@ endif
 if MEDIUM_MAP
 create_object GOLD
 {
-  number_of_groups           6   
+  number_of_groups           3   
   number_of_objects          4
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -375,14 +375,14 @@ endif
 if LARGE_MAP
 create_object GOLD
 {
-  number_of_groups           6    
+  number_of_groups           3    
   number_of_objects          4
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -390,14 +390,14 @@ endif
 if HUGE_MAP
 create_object GOLD
 {
-  number_of_groups           8    
+  number_of_groups           4    
   number_of_objects          4
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -405,14 +405,14 @@ endif
 if GIGANTIC_MAP
 create_object GOLD
 {
-  number_of_groups           10    
+  number_of_groups           5    
   number_of_objects          4
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -444,7 +444,7 @@ create_object STONE
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -459,12 +459,42 @@ create_object STONE
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
 
 if MEDIUM_MAP
+create_object STONE
+{
+  number_of_groups           3
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  7
+  max_distance_to_other_zones 7
+}
+endif
+
+if LARGE_MAP
+create_object STONE
+{
+  number_of_groups           3    
+  number_of_objects          4
+  group_variance             1
+  group_placement_radius     2
+  set_tight_grouping
+  set_gaia_object_only
+  min_distance_to_players       40
+  min_distance_group_placement  7
+  max_distance_to_other_zones 7
+}
+endif
+
+if HUGE_MAP
 create_object STONE
 {
   number_of_groups           4    
@@ -474,37 +504,7 @@ create_object STONE
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
-  max_distance_to_other_zones 7
-}
-endif
-
-if LARGE_MAP
-create_object STONE
-{
-  number_of_groups           6    
-  number_of_objects          4
-  group_variance             1
-  group_placement_radius     2
-  set_tight_grouping
-  set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
-  max_distance_to_other_zones 7
-}
-endif
-
-if HUGE_MAP
-create_object STONE
-{
-  number_of_groups           8    
-  number_of_objects          4
-  group_variance             1
-  group_placement_radius     2
-  set_tight_grouping
-  set_gaia_object_only
-  min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif
@@ -512,14 +512,14 @@ endif
 if GIGANTIC_MAP
 create_object STONE
 {
-  number_of_groups           10    
+  number_of_groups           5    
   number_of_objects          4
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
   min_distance_to_players       40
-  min_distance_group_placement  5
+  min_distance_group_placement  7
   max_distance_to_other_zones 7
 }
 endif

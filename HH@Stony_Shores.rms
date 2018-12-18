@@ -1,3 +1,4 @@
+
 /* **************************************** */
 /* Map:     '                               */
 /* Version: '                               */
@@ -15,18 +16,18 @@
 random_placement
 
 <LAND_GENERATION>       /* main lands and seas */
-base_terrain GRASS
+base_terrain DLC_ACACIAFOREST
 
 create_player_lands {
   terrain_type GRASS
   land_percent 100
   base_size 10
-  left_border   0
-  right_border  0
-  top_border    0
-  bottom_border 0
-  border_fuzziness 20
-  clumping_factor 20
+  left_border   30
+  right_border  30
+  top_border    30
+  bottom_border 30
+  border_fuzziness 100
+  clumping_factor 100
 }
 
 <ELEVATION_GENERATION>  /* hills */
@@ -72,7 +73,6 @@ create_terrain FOREST {
   number_of_clumps 10
   set_scale_by_groups
   set_avoid_player_start_areas
-  spacing_to_other_terrain_types 5
 }
 
 <CONNECTION_GENERATION> /* bridges/roads */
@@ -308,7 +308,7 @@ if TINY_MAP
 create_object GOLD
 {
   number_of_groups           4    
-  number_of_objects          4
+  number_of_objects          3
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
@@ -321,7 +321,7 @@ if SMALL_MAP
 create_object GOLD
 {
   number_of_groups           4    
-  number_of_objects          4
+  number_of_objects          3
   group_placement_radius     2
   set_tight_grouping
   set_gaia_object_only
@@ -334,7 +334,7 @@ if MEDIUM_MAP
 create_object GOLD
 {
   number_of_groups           6   
-  number_of_objects          4
+  number_of_objects          3
   group_variance             1
   group_placement_radius     2
   set_tight_grouping
@@ -348,7 +348,7 @@ if LARGE_MAP
 create_object GOLD
 {
   number_of_groups           6    
-  number_of_objects          4
+  number_of_objects          3
   group_variance             1
   group_placement_radius     2
   set_tight_grouping

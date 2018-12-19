@@ -536,7 +536,7 @@ create_object GRAVE {
   terrain_to_place_on DLC_CRACKED
 }
 
-create_object DLC_SAVANNAHGRASS {
+create_object DLC_SAVANNAHPATCH {
   number_of_objects 6
   min_distance_group_placement 3
   temp_min_distance_group_placement 20

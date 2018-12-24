@@ -41,7 +41,6 @@ create_player_lands {
   end_random
   border_fuzziness 20
   clumping_factor 20
-  other_zone_avoidance_distance 20
 }
 
 <ELEVATION_GENERATION>  /* hills */

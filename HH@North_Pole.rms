@@ -524,6 +524,19 @@ create_object STONE
 }
 endif
 
+/* fill rest of the map with deer */
+create_object DEER {
+  number_of_objects 4
+  number_of_groups 2
+  group_placement_radius 3
+  set_loose_grouping
+  set_gaia_object_only
+  min_distance_to_players 30
+  max_distance_to_players 40
+  min_distance_group_placement 3
+  set_scaling_to_map_size
+}
+
 /* birds */
 /* HAWK / MACAW / DLC_STORK / DLC_VULTURE / DLC_FALCON */
 create_object DLC_STORK {

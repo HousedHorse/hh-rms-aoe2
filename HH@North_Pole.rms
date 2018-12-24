@@ -275,6 +275,8 @@ create_object DEER {
   min_distance_to_players 14
   max_distance_to_players 16
   min_distance_group_placement 3
+  temp_min_distance_group_placement 7
+  max_distance_to_other_zones 7
 }
 
 /* stragglers */

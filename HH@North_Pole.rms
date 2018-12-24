@@ -301,6 +301,12 @@ create_object DEADTREE2 {
   min_distance_group_placement 2
 }
 
+create_object TRADE_WORKSHOP {
+  set_place_for_every_player
+  min_distance_to_players 10
+  max_distance_to_players 12
+}
+
 /* predatory lifeforms */
 /* WOLF / JAGUAR / DLC_KOMODO / DLC_TIGER 
    DLC_LION / DLC_CROCODILE / DLC_BEAR */

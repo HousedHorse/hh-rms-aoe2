@@ -29,13 +29,13 @@ create_player_lands {
     top_border    8
     bottom_border 8
   percent_chance 25
-    left_border   4
-    right_border  12
+    left_border   6
+    right_border  10
     top_border    8
     bottom_border 8
   percent_chance 25
-    left_border   12
-    right_border  4
+    left_border   10
+    right_border  6
     top_border    8
     bottom_border 8
   end_random
@@ -252,9 +252,8 @@ create_object STONE {
 /* SHEEP / TURKEY / DLC_GOAT
    DLC_LLAMA / DLC_WATERBUFFALO
    DLC_COW */
-create_object SHEEP {
-  number_of_objects 4
-  number_of_groups 2
+create_object DLC_COW {
+  number_of_objects 3
   set_gaia_object_only
   set_place_for_every_player
   min_distance_to_players 6
